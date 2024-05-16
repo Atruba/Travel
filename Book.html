@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="book.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <header class="header header-mobile">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="Home.html" class="logo"><i class="fas fa-paper-plane"></i>Digital Backpackers</a>
+    <nav class="navbar navbar-mobile navbar-mobile.active">
+      <a href="Home.html" class="cs-active">Home</a>
+      <a href="About.html">About</a>
+      <span class="services-option">
+        <div class="dropdown">
+          <button class="dropbutton">Services</button>
+          <div class="dropdown-content">
+            <a href="Map.html" class="activee">Interactive Map</a>
+            <a href="Destinations.html">Digital Guides</a>
+            <a href="Book.html">Bookings</a>
+          </div>
+        </div>
+      </span>
+      <a href="contact.html">Contact</a>
+      </nav>
+        <a href="myaccount.html" class="btn btn-mobile">Sign In</a>
+    </nav>
+  </header>
+
+
+  <div class="content-container">
+    <div class="content-width-size">
+      <div id="myDIV">
+        <button class="btn active" onclick="oneWay()">One Way</button>
+        <button class="btn" onclick="RoundWay()">Round Trip</button>
+     </div>
+      <div class="flex-width">
+        <div id="oneWay-data">
+          <div class="label-select">
+            <label for="location_departure">Your Location</label>
+            <input type="text" id="location_departure" name="location_departure" required />
+          </div>
+          <div class="label-select">
+            <label for="location_arrival">Destination</label>
+            <input type="text" id="location_arrival" name="location_arrival" required />
+          </div>
+          <div class="label-select">
+            <label for="date_departure">Date of Departure</label>
+            <input type="date" id="date_departure" name="date_departure" required />
+          </div>
+        </div>
+        <div id="roundWay-data">
+          <div class="label-select">
+            <label for="location_departure">Your Location</label>
+            <input type="text" id="location_departure" name="location_departure" required />
+          </div>
+          <div class="label-select">
+            <label for="location_arrival">Destination</label>
+            <input type="text" id="location_arrival" name="location_arrival" required />
+          </div>
+          <div class="label-select">
+            <label for="date_departure">Date of Departure</label>
+            <input type="date" id="date_departure" name="date_departure" required />
+          </div>
+          <div class="label-select">
+            <label for="date_return">Date of Return</label>
+            <input type="date" id="date_return" name="date_return" required />
+          </div>
+        </div>
+        <div id="MultiWay-data">
+          <div class="label-select">
+            <label for="location_departure">Your Location</label>
+            <input type="text" id="location_departure" name="location_departure" required />
+          </div>
+          <div class="label-select">
+            <label for="location_arrival">Destination</label>
+            <input type="text" id="location_arrival" name="location_arrival" required />
+          </div>
+          <div class="label-select">
+            <label for="date_departure">Date of Departure</label>
+            <input type="date" id="date_departure" name="date_departure" required />
+          </div>
+        </div>
+        <div id="add-more">
+          <!-- Add more input fields as needed -->
+        </div>
+        <div id="add-more-1">
+          <!-- Add more input fields as needed -->
+        </div>
+        <div id="btn-add-delete">
+          <button id="delete-btn" onclick="deleteMore()">Delete</button>
+          <button id="add-btn" onclick="addMore()">Add more</button>
+        </div>
+        <div class="extra-content">
+          <div class="passeneger-info">
+            <div class="label-select">
+              <label for="number_of_passengers">Number of Passengers</label>
+              <input type="number" id="number_of_passengers" name="number_of_passengers" min="1" max="9" required />
+            </div>
+          </div>
+          
+        </div>
+        <div class="submit-catagori-btn">
+          <button class="button-87" role="button" onclick="submitForm()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+<!--                  Footer                      -->
+<footer id="cs-footer-308">
+  <div class="cs-container">
+      <!-- Logo Group -->
+      <div class="cs-logo-group">
+        <a aria-label="go back to home" class="cs-logo" href="Home.html">
+          <h1 class="cs-logo-text">Digtial Backpackers</h1> </a>
+        <p class="cs-text">
+          Digital backpackers are a new breed of travelers who leverage technology to enhance their adventures.
+        </p>
+      </div>
+      
+      <!-- Links -->
+      <ul class="cs-nav">
+        <li class="cs-nav-li">
+          <span class="cs-header">Links</span>
+      </li>
+          <li class="cs-nav-li">
+              <a class="cs-nav-link" href="Home.html">Home</a>
+          </li>
+          <li class="cs-nav-li">
+              <a class="cs-nav-link" href="About.html">About</a>
+          </li>
+          <li class="cs-nav-li">
+              <a class="cs-nav-link" href="Destinations.html">Destinations</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="Map.html">Map</a>
+        </li>
+          <li class="cs-nav-li">
+              <a class="cs-nav-link" href="contact.html">Contact</a>
+          </li>
+      </ul>
+      <!-- Contact Info -->
+      <ul class="cs-nav">
+          <li class="cs-nav-li">
+              <span class="cs-header">Contact</span>
+          </li>
+          <li class="cs-nav-li">
+              <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-stroke.svg" alt="phone" width="24" height="24">
+              <a class="cs-nav-link cs-phone" href="https://wa.me/971553620934">(+971) 55 362 0934</a>
+          </li>
+          <li class="cs-nav-li">
+              <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/email-stroke.svg" alt="email" width="24" height="24">
+              <a class="cs-nav-link cs-email" href="mailto:digitalbackpackers24@gmail.com">digitalbackpackers24@gmail.com</a>
+          </li> 
+          <li class="cs-nav-li">
+              <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-stroke.svg" alt="pin" width="24" height="24">
+              <a class="cs-nav-link cs-address" href="https://maps.app.goo.gl/qpSWhccZDWv7zuGB9" target="_blank" rel="noopener">
+                   Bath Spa University, RAK
+              </a>
+          </li>
+      </ul>
+  </div>
+  <div class="cs-bottom">
+      <span class="cs-copyright">© Copyright 2024 - <a class="cs-copyright-link" href="">Digital Backpackers</a></span>
+  </div>
+
+
+</footer>
+
+
+<script src="map.js"></script>
+</body>
+
+</html>
