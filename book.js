@@ -447,4 +447,23 @@ let flight = new SearchFlight();
 flight.showHideRoundTrip();
 
 
-
+const fetchFlightData = async (departureId, arrivalId, outboundDate, returnDate, currency) => {
+  console.log('fetchFlightData')
+  try {
+    const result = await fetch(`http://localhost:3000/flights`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        departureId: departureId || 'TBS',
+        arrivalId: arrivalId || 'IST',
+        outboundDate: outboundDate || '2024-10-02',
+        returnDate: returnDate || null,
+        currency: currency || 'USD'
+      })
+    })
+  } catch (error) {
+    console.error(error)
+  }
+}
