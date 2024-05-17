@@ -292,7 +292,7 @@ position:relative;
   transition: transform 0.2s ease; /* Add transition for smooth scaling */
 }
 .slider-images img:hover {
-  transform: scale(1.5); /* Scale the image slightly larger on hover */
+  transform: scale(1.5) translateX(10px); /* Scale the image slightly larger on hover */
 }
 
 .slider-images img.active {
