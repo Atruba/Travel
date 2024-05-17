@@ -260,11 +260,11 @@ section{
 
 
 
-select{
+select {
   border:none;
   padding: 10px 20px;
   border-radius:5px;
-  width: 922px;
+  width: 100%;
 }
 
 select:focus{
