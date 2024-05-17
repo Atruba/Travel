@@ -880,7 +880,8 @@ textarea.input {
       margin: auto;
       margin-top: 2rem;
       padding-top: 1.5rem;
-      border-top: 1px solid #484848;
+      border-top: 1px solid #fef6db;
+      color: #fef6db;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -932,4 +933,6 @@ textarea.input {
       width: 100%;
   }
 }
+
+
 

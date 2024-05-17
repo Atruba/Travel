@@ -636,7 +636,7 @@ section{
   }
   
   .button button:hover{
-    background: #ababab;
+    background: #484848;
     color: #fff
   }  
 
@@ -1753,7 +1753,8 @@ color:#127e41;
       margin: auto;
       margin-top: 2rem;
       padding-top: 1.5rem;
-      border-top: 1px solid #484848;
+      border-top: 1px solid #fef6db;
+      color:#fef6db;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1839,8 +1840,7 @@ color:#127e41;
 
 
 
-
-.popup-form  {
+.popup-form, .popup-form1 {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1852,14 +1852,6 @@ color:#127e41;
   z-index: 1000;
 }
 
-.popup-form1  {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 20px;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
+.popup-form h3, .popup-form1 h3 {
+  font-size: small;
 }

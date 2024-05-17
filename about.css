@@ -776,7 +776,8 @@ margin: top 0.1em;
       margin: auto;
       margin-top: 2rem;
       padding-top: 1.5rem;
-      border-top: 1px solid #484848;
+      border-top: 1px solid #fef6db;
+      color:#fef6db;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -854,4 +855,23 @@ margin: top 0.1em;
       display: none;
     }
   }
+}
+
+
+
+.social-icons {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.social-icons a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust the size of the social icons */
+  height: auto;
 }

@@ -19,16 +19,16 @@
   #GE:hover {
     fill: #BBB;
   }
-  #AR {
+  #AU {
     fill: #00F;
   }
-  #AR:hover {
+  #AU:hover {
     fill: #000080;
   }
-  #JO {
+  #JP {
     fill: rgb(243, 32, 145);
   }
-  #JO:hover {
+  #JP:hover {
     fill: #853177;
   }
 #RU{
@@ -642,7 +642,8 @@
       margin: auto;
       margin-top: 2rem;
       padding-top: 1.5rem;
-      border-top: 1px solid #484848;
+      border-top: 1px solid #fef6db;
+      color: #fef6db;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -709,4 +710,23 @@
 }
 
 
-  
+.social-icons {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.social-icons a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.social-icons img {
+  width: 30px; /* Adjust the size of the social icons */
+  height: auto;
+}
+
+.info-box{
+  color: #fef6db;
+}

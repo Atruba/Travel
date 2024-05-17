@@ -233,22 +233,7 @@ section{
   box-shadow: 0 .5rem 1rem rgba(17,17,17,.3);
   padding:3rem 2rem;
 
-  form{
-    display:flex;
-    align-items:flex-end;
-    flex-wrap: wrap;
-    gap:1.5rem;
-
-    .inputBox{
-      flex:1 1 40rem;
-      width: auto;
-      position: relative; /* Make the input box relative for positioning */
-
   
-      span{
-        font-size: 1.4rem;
-        color:#fef6db;
-      }
 
       input{
         width:100%;
@@ -264,53 +249,28 @@ section{
       }
       
     }
-    .btn{
-      flex:1 1 15rem;
-    }
-  }
-}
-
-.destination-input {
-  width: 100%; /* Stretch to full width */
-  padding: 1.2rem 1.4rem; /* Adjust padding for dropdown icon */
-  border-radius: 5rem;
-  font-size: 1.3rem;
-  text-transform: none;
-  background: none;
-  color: #fef6db;
-  border: #3B4131;
-  background-color: #555;
-  /* Add a background image for icon (optional) */
-  /* background-image: url("dropdown-icon.png"); */
-  /* background-repeat: no-repeat; */
-  /* background-position: right 1rem center;  */
-}
-
-.dropdown-list {
-  position: absolute; /* Make the list absolute relative to input box */
-  top: 100%; /* Position below the input */
-  left: 0; /* Align to the left */
-  width: 100%; /* Match input width */
-  background-color: #333; /* Match form background */
-  border-radius: 0.5rem; /* Rounded corners */
-  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  padding: 0.5rem 1rem; /* Padding for items */
-  display: none; /* Initially hidden */
-}
-
-.dropdown-item {
-  color: #fef6db;
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem; /* Padding for each item */
-  cursor: pointer; /* Indicate clickable behavior */
-  display: block; /* Make each item a block element */
-}
-
+    
+  
 
 .inputBox:hover .dropdown-list,
 .destination-input:focus + .dropdown-list {
   display: block; /* Show dropdown on hover or focus */
 }
+
+
+
+
+select{
+  border:none;
+  padding: 10px 20px;
+  border-radius:5px;
+  width: 922px;
+}
+
+select:focus{
+  outline:none;
+}
+
 
 .slider {
 position:relative;
@@ -702,7 +662,8 @@ position:relative;
       margin: auto;
       margin-top: 2rem;
       padding-top: 1.5rem;
-      border-top: 1px solid #484848;
+      border-top: 1px solid #fef6db;
+      color: #fef6db;
       display: flex;
       justify-content: center;
       align-items: center;

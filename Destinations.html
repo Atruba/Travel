@@ -21,9 +21,9 @@
         <div class="dropdown">
           <button class="dropbutton">Services</button>
           <div class="dropdown-content">
-            <a href="Map.html" class="active">Interactive Map</a>
             <a href="Destinations.html">Digital Guides</a>
             <a href="Book.html">Bookings</a>
+            <a href="Map.html" class="active">Interactive Map</a>
           </div>
         </div>
       </span>
@@ -42,7 +42,7 @@
         <div class="item" style="background-image: url(des3.jpg);">
             <div class="content">
                 <div class="name">Sydney, Australia</div>
-                <div class="des">Land Down Under known for its unique wildlife.</div>
+                <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
                 <a href="sydney.html" class="btn">Full Guide</a>
             </div>
         </div>
@@ -50,14 +50,14 @@
         <div class="item" style="background-image: url(des1.jpg);">
             <div class="content">
                 <div class="name">Istanbul, Turkey</div>
-                <div class="des">Bridge between continents, boasting ancient ruins and stunning beaches.</div>
+                <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
                 <a href="istanbul.html" class="btn">Full Guide</a>
             </div>
         </div>
         <div class="item" style="background-image: url(des2.jpg);">
             <div class="content">
                 <div class="name">Tbilisi, Georgia</div>
-                <div class="des">Country at the crossroads of Europe and Asia, famous for its mountains and wine.</div>
+                <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
                 <a href="tbilisi.html" class="btn">Full Guide</a>
 
               </div>
@@ -66,7 +66,7 @@
         <div class="item" style="background-image: url(des4.jpg);">
             <div class="content">
                 <div class="name">Bath, UK</div>
-                <div class="des">Island nation steeped in history and home to the Royal Family.</div>
+                <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
                 <a href="bath.html" class="btn">Full Guide</a>
 
               </div>
@@ -74,7 +74,7 @@
         <div class="item" style="background-image: url(des5.jpg);">
             <div class="content">
                 <div class="name">Japan</div>
-                <div class="des">Technological powerhouse with a rich cultural heritage.</div>
+                <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
                 <a href="tokyo.html" class="btn">Full Guide</a>
 
               </div>
@@ -154,7 +154,7 @@
             <span class="cs-topper">Unlock Adventure</span>
             <h2 class="cs-title">Get Access to Our Digital Travel Guides</h2>
             <p class="cs-text">
-              Tired of bulky guidebooks?  Explore the world with ease using our downloadable, digital travel guides! Packed with insider tips, curated itineraries, and essential information, these guides will be your travel companion for a memorable adventure.
+              Tired of bulky guidebooks?  Explore the world with ease using our downloadable, digital travel guides! Packed with insider tips, curated itineraries, and essential information. To unlock other destinations! Simply enter your details to receive a downloadable guide via email.
             </p>
         </div>
         <!-- Creates the faded lines on tablet -->
@@ -237,13 +237,14 @@
         </div>
       </div>
     </a>
-   <!-- Add a hidden popup form -->
+   <!-- hidden popup form -->
 <div class="popup-form" style="display: none;">
-  <!-- Your popup form content here -->
-    <form> 
+    <form action="https://api.web3forms.com/submit" method="POST"> 
       <h3>Login to Unlock</h3>
-      <input type="email" placeholder="Email">
-      <input type="password" placeholder="Password">
+      <input type="hidden" name="access_key" value="ea310936-2287-4af2-b88c-9df93e1b0d5c">
+      <input type="text" name="name" placeholder="Enter your Name">
+      <input type="email" name="email" placeholder="Enter your Email">
+      <input type="text" name="name" placeholder="Enter Guide Name">
       <button type="submit">Unlock Tbilisi</button>
   </form>
 </div>
@@ -264,12 +265,14 @@
   </div>
 </a>
 <div class="popup-form1" style="display: none;">
-    <form> 
-      <h3>Login to Unlock</h3>
-      <input type="email" placeholder="Email">
-      <input type="password" placeholder="Password">
-      <button type="submit">Unlock Sydney</button>
-  </form>
+  <form action="https://api.web3forms.com/submit" method="POST"> 
+    <h3>Login to Unlock</h3>
+    <input type="hidden" name="access_key" value="ea310936-2287-4af2-b88c-9df93e1b0d5c">
+    <input type="text" name="name" placeholder="Enter your Name">
+    <input type="email" name="email" placeholder="Enter your Email">
+    <input type="text" name="name" placeholder="Enter Guide Name">
+    <button type="submit">Unlock Sydney</button>
+</form>
 </div>
 
 
@@ -290,7 +293,7 @@
       <!-- Links -->
       <ul class="cs-nav">
         <li class="cs-nav-li">
-          <span class="cs-header">Links</span>
+          <span class="cs-header">Quick Links</span>
       </li>
           <li class="cs-nav-li">
               <a class="cs-nav-link" href="Home.html">Home</a>

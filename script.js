@@ -166,36 +166,7 @@ submitBtn.addEventListener('click', validate);
 
 
 
-// **1. Console Logging:**
-function logPlaceholder(message) {
-  console.log(message, document.getElementById("destination-input").placeholder);
-}
 
-// **2. Temporary Click Event Listener:**
-const destinationInput = document.getElementById("destination-input");
-destinationInput.addEventListener("click", () => {
-  console.log("Input clicked, placeholder:", destinationInput.placeholder);
-});
-
-
-// **Dropdown Functionality:**
-
-const dropdownList = document.querySelector(".dropdown-list");
-const selectedCountryInput = document.querySelector(".selected-country");
-const originalPlaceholder = destinationInput.placeholder;
-
-dropdownList.addEventListener("click", (event) => {
-  if (event.target.classList.contains("dropdown-item")) {
-    const selectedCountry = event.target.dataset.value;
-    destinationInput.value = selectedCountry;
-    destinationInput.placeholder = selectedCountry; // Update placeholder
-    selectedCountryInput.value = selectedCountry;
-    dropdownList.style.display = "none"; /* Hide dropdown list after selection */
-
-    // **Log Placeholder Update:**
-    logPlaceholder("Updated placeholder after selection:");
-  }
-});
 
 
 
