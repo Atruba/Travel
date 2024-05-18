@@ -75,18 +75,16 @@
   <section class="book-form" id="book-form">
     <p>Choose your full guide:</p>
     <select name="city" id="city">
-      <option value="javascript" onclick="goToPage('Sydney.html')">Sydney</option>
-      <option value="python">Bath</option>
-      <option value="c++" disabled>Istanbul</option>
-      <option value="java" selected>Tokyo</option>
-      <option value="java" selected>Tbilisi</option>
+        <option value="Sydney.html">Sydney</option>
+        <option value="Bath.html">Bath</option>
+        <option value="Istanbul.html">Istanbul</option>
+        <option value="Tokyo.html">Tokyo</option>
+        <option value="Tbilisi.html">Tbilisi</option>
     </select>
     <input type="hidden" id="selectedCity" name="selectedCity">
+    <input type="button" value="Find Now" class="btn" onclick="redirectToCityPage()">
+</section>
 
-    <input type="submit" value="Find Now" class="btn">
-
-  </section>
-  
   
   
   <!--                  About Section                      -->
