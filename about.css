@@ -89,7 +89,7 @@ section{
     .navbar{
       position:relative;
       width: 524px;
-      height: 50px;
+      height: 60px;
       top:99%; left:0; right:0;
       background: #222;
       border-radius: 8px;
@@ -105,40 +105,12 @@ section{
     display:inline-block;
     margin:0 1rem;
     padding: 0, 23px;
-    z-index: 1;
     &:hover{
       color:#fcad02;
     }
-    .navbar span{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 95px;
-      height: 100%;
-      background: linear-gradient(45deg,#127e41, #fcad02 ) ;
-      border-radius: 8px;
-      transition: .5s;
-    }
-    .navbar a:nth-child(1):hover~span{
-      left:0;
-    }
-    .navbar a:nth-child(2):hover~span{
-      left:95px;
-    }
-    .navbar a:nth-child(3):hover~span{
-      left:189px;
-      width: 110px
-    }
-    .navbar a:nth-child(4):hover~span{
-      left:289px;
-      width: 115px
-    }
-    .navbar a:nth-child(5):hover~span{
-      left:413px;
-      width: 110px
-    }
   }
-
+  
+  
   .btn{
     margin-top:0;
   }
@@ -149,6 +121,7 @@ section{
   font-size: 2.5rem;
   color:#fff;
   font-weight:bolder;
+  margin-left: 20px;
 
   i{
     color:#fef6db;
@@ -175,6 +148,10 @@ section{
   font-size: 1.7rem;
     font-weight: 500;
     color:#fef6db;
+    margin-right: 20px;
+    &:hover{
+      color:#fcad02;
+    }
 }
 
 .btn {
