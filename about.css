@@ -269,6 +269,8 @@ section{
   }
  .btn-mobile{
   display:none;
+  margin-top: 10px;
+  margin-left: 10px;
  }
 
   .header{
@@ -298,6 +300,14 @@ section{
 
   html{
     font-size:50%;
+  }
+
+  .btn .btn-mobile{
+    height: 35px;
+    width: 50px;
+  }
+  .navbar{
+   height: 20px;
   }
 
 }
