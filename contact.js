@@ -16,5 +16,6 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
-
-
+document.getElementById('menu-btn').addEventListener('click', function () {
+  document.querySelector('.navbar').classList.toggle('active');
+});
