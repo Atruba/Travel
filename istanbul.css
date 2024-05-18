@@ -1731,4 +1731,12 @@
 	display: flex; /* Enable flexbox layout */
 	align-items: center; /* Align content vertically */
 	justify-content: center; /* Align content horizontally */
+<<<<<<< Updated upstream
+=======
+  }
+
+
+  .bordered-iframe {
+	border: 5px solid #ccc;
+>>>>>>> Stashed changes
   }

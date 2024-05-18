@@ -1765,4 +1765,6 @@ link:hover {
   color: #0a4870; /* Change color on hover */
 }
 
-
+.bordered-iframe {
+	border: 5px solid #ccc;
+  }
