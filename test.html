@@ -1,37 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="test.css" />
-    <title>Web Design Mastery | WDM&Co</title>
-  </head>
-  <body>
-    <header class="header header-mobile">
-      <div id="menu-btn" class="fas fa-bars"></div>
-      <a href="Home.html" class="logo"><i class="fab fa-papper-plane" ></i>Digital Backpackers</a>
-      <nav class="navbar navbar-mobile navbar-mobile.active">
-        <a href="Home.html" class="cs-active">Home</a>
-        <a href="About.html">About</a>
-        <span class="services-option">
-          <div class="dropdown">
-            <button class="dropbutton">Services</button>
-            <div class="dropdown-content">
-              <a href="Destinations.html">Digital Guides</a>
-              <a href="Book.html">Bookings</a>
-              <a href="Map.html" class="active">Interactive Map</a>
-            </div>
-          </div>
-        </span>
-        <a href="contact.html">Contact</a>
-        </nav>
-          <a  class="btn btn-mobile">Sign In</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="styles1.css">
+  <link rel="stylesheet" href="common/styles/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
 
-    </body>
-    </html>
+  <section class="book-form" id="book-form">
+    <p>Choose your full guide:</p>
+    <select name="city" id="city">
+        <option value="Sydney.html">Sydney</option>
+        <option value="Bath.html">Bath</option>
+        <option value="Istanbul.html" disabled>Istanbul</option>
+        <option value="Tokyo.html">Tokyo</option>
+        <option value="Tbilisi.html">Tbilisi</option>
+    </select>
+    <input type="hidden" id="selectedCity" name="selectedCity">
+    <input type="button" value="Find Now" class="btn" onclick="redirectToCityPage()">
+</section>
+
+
+<script>
+  // Function to handle the form submission
+function redirectToCityPage() {
+  // Get the selected city value from the dropdown
+  let selectedCity = document.getElementById('city').value;
+  
+  // Redirect to the selected city's page
+  if (selectedCity) {
+      window.location.href = selectedCity;
+  }
+}
+
+// Initialize the slider and show the initial slide
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Function to handle the click on slider images
+function currentSlide(n) {
+  // Show the selected slide and update the background image
+  showSlides(slideIndex = n);
+  changeBackgroundImage(n);
+  
+  // Toggle the content visibility
+  toggleContent();
+}
+
+// Function to toggle the visibility of the title and paragraph
+function toggleContent() {
+  var title = document.getElementById("home-title");
+  var paragraph = document.querySelector(".content-tab2 p");
+  
+  // Add the 'visible' class to start the animation
+  title.classList.add("visible");
+  paragraph.classList.add("visible");
+}
+
+// Function to show the selected slide
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slider-images")[0].getElementsByTagName("img");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+  }
+  slides[slideIndex-1].classList.add("active");
+}
+
+// Function to change the background image based on the selected slide
+function changeBackgroundImage(n) {
+  let backgroundImage;
+  let titleText;
+  switch(n) {
+      case 1:
+          backgroundImage = "turkey.png";
+          titleText = "the Magic of Turkey";
+          break;
+      case 2:
+          backgroundImage = "UK.png";
+          titleText = "the Beauty of the UK";
+          break;
+      case 3:
+          backgroundImage = "aus.png";
+          titleText = "the Charm of Australia";
+          break;
+      case 4:
+          backgroundImage = "georg1.png";
+          titleText = "the Unveiling Tbilisi's Treasures";
+          break;
+      case 5:
+          backgroundImage = "japan1.png";
+          titleText = "the Tokyo Treasures on a Budget";
+          break;
+      // Add more cases for additional images
+      default:
+          backgroundImage = "turkey.png"; // Default background image
+          titleText = "Experience the Magic of Dubai";
+  }
+  document.getElementById("home").style.backgroundImage = "url('" + backgroundImage + "')";
+  document.getElementById("home-title").innerText = titleText;
+}
+
+document.querySelectorAll('.about .video-container .controls .control-btn').forEach(btn => {
+  btn.onclick = () => {
+      let src = btn.getAttribute('data-src');
+      document.querySelector('.about .video-container .video').src = src;
+  }
+});
+
+  
+</script>
+<script src="script.js"></script>
+</body>
+</html>
