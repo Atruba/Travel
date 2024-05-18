@@ -1,4 +1,3 @@
-/* Airport JSON list */
 const airportSearch = [
   {
     location: "AbuDhabi (AUH)",
@@ -460,6 +459,8 @@ const fetchFlightData = async () => {
   const returnDate = document.searchFlight.dateOfReturn.value;
   const currency = 'AED';
   const oneWay = document.searchFlight.radioOneWay.checked ? 1 : 2;
+  const roundTrip = document.searchFlight.radioOneWay.checked ? 2 : 1;
+
 
   console.log(departureId, arrivalId, outboundDate, returnDate, currency)
   try {
@@ -473,7 +474,8 @@ const fetchFlightData = async () => {
         arrivalId: arrivalId || 'SAW',
         outboundDate: outboundDate || '2024-10-02',
         returnDate: returnDate || null,
-        currency: currency || 'AED'
+        currency: currency || 'AED',
+      
       })
     })
 

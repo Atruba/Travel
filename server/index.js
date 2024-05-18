@@ -19,11 +19,12 @@ console.log(`Server listening on port ${PORT}\n-------------------------`);
 });
 
 app.post('/flights', async (req, res) => {
-  const { departureId, arrivalId, outboundDate, returnDate, currency, type } = req.body;
+  const { departureId, arrivalId, outboundDate, returnDate, currency, type, tripType} = req.body;
   try {
-    const result = await fetchFlightData(departureId, arrivalId, outboundDate, returnDate, currency, type);
+    const result = await fetchFlightData(departureId, arrivalId, outboundDate, returnDate, currency, type, tripType);
     return res.json(result).end();
   } catch (error) {
+    console.error(error)
     return res.status(500).json({error}).end();
   }
 });

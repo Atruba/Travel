@@ -1,7 +1,7 @@
 import { getJson } from "serpapi"
 import { API_KEY } from "./constants.js";
 
-export const fetchFlightData = async (departureId, arrivalId, outboundDate, returnDate, currency, type) => {
+export const fetchFlightData = async (departureId, arrivalId, outboundDate, returnDate, currency, type, tripType) => {
     const res = await getJson({
       engine: 'google_flights',
       departure_id: departureId,
@@ -11,7 +11,7 @@ export const fetchFlightData = async (departureId, arrivalId, outboundDate, retu
       currency: currency,
       hl: 'en',
       api_key: API_KEY,
-      type: type || 2
+      type: type || 2,
     }) 
     
     return res;
