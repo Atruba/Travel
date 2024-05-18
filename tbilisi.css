@@ -1796,3 +1796,7 @@
 	align-items: center; /* Align content vertically */
 	justify-content: center; /* Align content horizontally */
   }
+
+  .bordered-iframe {
+	border: 5px solid #ccc;
+  }
