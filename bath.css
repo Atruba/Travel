@@ -1141,7 +1141,6 @@
 					width: 100%;
 					height: 100%;
 					background-color: rgba(0, 0, 0, 0.25);
-					background-image: url(bathgui.jpg);
 
 				}
 
@@ -1765,3 +1764,5 @@
 link:hover {
   color: #0a4870; /* Change color on hover */
 }
+
+
