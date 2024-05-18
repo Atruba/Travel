@@ -102,9 +102,7 @@ section{
     margin:0 1rem;
     padding: 0, 23px;
     z-index: 1;
-    &:hover{
-      color:#fcad02;
-    }
+      }
     .navbar span{
       position: absolute;
       top: 0;
@@ -138,7 +136,7 @@ section{
   .btn{
     margin-top:0;
   }
-  }
+  
 
 
 .logo{
@@ -152,6 +150,7 @@ section{
   }
 
 }
+
 
 #menu-btn{
   font-size:2.5rem;
@@ -171,6 +170,7 @@ section{
   font-size: 1.7rem;
     font-weight: 500;
     color:#fef6db;
+   
 }
 
 .btn {
