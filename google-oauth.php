@@ -5,9 +5,9 @@ session_start();
 include "connect.php"; // Include your database connection file
 
 // Update the following variables with your Google OAuth credentials
-$google_oauth_client_id = '271986754221-p0kbr0fn4np6u691ll6at7svk3ph8j49.apps.googleusercontent.com';
-$google_oauth_client_secret = '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';
-$google_oauth_redirect_uri = 'http://localhost/GitHub/Travel/google-oauth.php'; //add ur URI
+$google_oauth_client_id = '343185708877-rometopnte64887t1c4tc5brh08gm06s.apps.googleusercontent.com';
+$google_oauth_client_secret = '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';
+$google_oauth_redirect_uri = 'http://localhost/GitHub/Travel/Home.php'; //add ur URI
 $google_oauth_version = 'v3';
 
 // If the user is not already logged in via Google and the code parameter is present
