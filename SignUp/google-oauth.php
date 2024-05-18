@@ -50,8 +50,9 @@ if (!isset($_SESSION['google_loggedin']) && isset($_GET['code']) && !empty($_GET
             $_SESSION['google_loggedin'] = TRUE;
             $_SESSION['google_email'] = $profile['email'];
             // Redirect to profile page or perform any other action
-            header('Location:Home.php'); //change to ur file where u want to direct it
+            header('Location:C:\xamp\htdocs\GitHub\Travel\Home.php'); //change to ur file where u want to direct it
             exit;
+            
         } else {
             exit('Could not retrieve profile information! Please try again later!');
         }
