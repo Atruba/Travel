@@ -7,7 +7,6 @@
 
   <link rel="stylesheet" href="common/styles/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <script src="book.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
@@ -36,7 +35,7 @@
 
   <section id="bodyCotainer">
     <!-- Flight Search From Starts -->
-    <div class="filterSearchFilter" style="padding:20px">
+    <div class="filterSearchFilter">
       <aside id="flightSearch">
         <form name="searchFlight">
           <div class="radio-toolbar">
@@ -66,7 +65,7 @@
             <input type="number" id="noOfTravelers" onchange="flight.validateTravelers(event)" min="1" max ="8" placeholder="Number of Travelers">
           </div>
           <div>
-            <input id="searchBtn" type="button" onclick="fetchFlightData()" value="Submit" />
+            <input id="searchBtn" type="button" onclick="flight.submitValues(event)" value="Submit" />
           </div>
         </form>
       </aside>
@@ -78,7 +77,7 @@
     <!-- Flight Search From Ends -->
     <!-- Flight List From Starts -->
     <div id="FlightResult">
-      <div class="beforeSearch"style="color: #000; font-size: 15px;"><i class="fa fa-fighter-jet" aria-hidden="true"></i>Please Make Fight Search</div>
+      <div class="beforeSearch"><i class="fa fa-fighter-jet" aria-hidden="true"></i>Please Make Fight Search</div>
       <div class="flightOnward flightResultWrapper">
         <div class="flightResultHeader">
           <div class="headerStartingDate">
@@ -93,7 +92,9 @@
             <p class="headEndDate"></p>
           </div>
         </div>
-        <table id="table"></table>
+        <div class="flightResultContent">
+          <table id="table"></table>
+        </div>
       </div>
       <div class="flightReturn flightResultWrapper">
         <div class="flightResultHeader">
@@ -109,12 +110,13 @@
             <p class="returnEndDate"></p>
           </div>
         </div>
-        <table id="table1"></table>
+        <div class="flightResultContent">
+          <table id="table1"></table>
+        </div>
       </div>
     </div>
     <!-- Flight List From Ends -->
   </section>
-
 
       
 <!--                  Footer                      -->
@@ -177,9 +179,7 @@
 
 
 </footer>
-
-
 <script src="book.js"></script>
-</body>
 
+</body>
 </html>
