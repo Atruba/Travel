@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto');
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto");
 body {
-    background: #111;
+  background: linear-gradient(to right, #3FB6A8, #7ED386);
 }
-
-
 
 .container {
   background: #FFFFFF;
@@ -19,8 +17,8 @@ body {
   float: right;
   margin-right: 12px;
   margin-top: 12px;
-  font-family: 'Nunito Sans', sans-serif;
-  color: #3b4131;
+  font-family: "Nunito Sans", sans-serif;
+  color: #3DBB3D;
   font-weight: 900;
   font-size: 1.5em;
   letter-spacing: 1px;
@@ -34,21 +32,19 @@ body {
   margin-bottom: 90px;
   position: absolute;
   z-index: 1;
-  background: #3b4131;
+  background: #7ED386;
   font-size: 1em;
   transform: rotate(-90deg);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
-
 .CTA h1 {
   color: #FFFFFF;
   margin-top: 10px;
   margin-left: 9px;
 }
-
 .CTA:hover {
-  background: #337c3a;
+  background: #3FB6A8;
   transform: scale(1.1);
 }
 
@@ -59,7 +55,7 @@ body {
   position: absolute;
   width: 15%;
   height: 110%;
-  background: #3b4131;
+  background: #7ED386;
   box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.5);
 }
 
@@ -71,19 +67,17 @@ nav a {
   display: block;
   transition: all 0.3s ease-in-out;
 }
-
 nav a:hover {
-  color: #fef6db;
+  color: #3FB6A8;
   transform: scale(1.2);
   cursor: pointer;
 }
-
 nav a:first-child {
   margin-top: 7px;
 }
 
 .active {
-  color: #fef6db;
+  color: #3FB6A8;
 }
 
 .rightbox {
@@ -92,19 +86,15 @@ nav a:first-child {
   height: 100%;
 }
 
-.profile,
-.payment,
-.subscription,
-.privacy,
-.settings {
+.profile, .payment, .subscription, .privacy, .settings {
   transition: opacity 0.5s ease-in;
   position: absolute;
   width: 70%;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
-  color: #3b4131;
+  font-family: "Montserrat", sans-serif;
+  color: #7ED386;
   font-size: 1em;
   margin-top: 40px;
   margin-bottom: 35px;
@@ -112,7 +102,7 @@ h1 {
 
 h2 {
   color: #777777;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 80%;
   text-transform: uppercase;
   font-size: 8px;
@@ -123,10 +113,11 @@ h2 {
 p {
   border-width: 1px;
   border-style: solid;
-  border-image: linear-gradient(to right, #3FB6A8, rgba(126, 211, 134, 0.5)) 1 0%;
+  -o-border-image: linear-gradient(to right, #3FB6A8, rgba(126, 211, 134, 0.5)) 1 0%;
+     border-image: linear-gradient(to right, #3FB6A8, rgba(126, 211, 134, 0.5)) 1 0%;
   border-top: 0;
   width: 80%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.7em;
   padding: 7px 0;
   color: #070707;
@@ -139,7 +130,7 @@ span {
 
 .btn {
   float: right;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 10px;
   border: none;
@@ -152,8 +143,8 @@ span {
 }
 
 input {
-  border: 1px solid #B3B3B3;
-  font-family: 'Roboto', sans-serif;
+  border: 1px solid #dddddd;
+  font-family: "Roboto", sans-serif;
   padding: 2px;
   margin: 0;
 }
@@ -169,3 +160,26 @@ input {
 .noshow {
   opacity: 0;
 }
+
+footer {
+  position: absolute;
+  width: 20%;
+  bottom: 0;
+  right: -20px;
+  text-align: right;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+}
+footer p {
+  border: none;
+  padding: 0;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #7d7d7d;
+}/*# sourceMappingURL=acc.css.map */
