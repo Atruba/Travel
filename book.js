@@ -1,33 +1,28 @@
+/* Airport JSON list */
 const airportSearch = [
   {
     location: "AbuDhabi (AUH)",
-    keyword: ["AbuDhabi", "AUH", "AbuDhabi (AUH)"],
-    airportCode: "AUH"
+    keyword: ["AbuDhabi", "AUH", "AbuDhabi (AUH)"]
   },
   {
     location: "Tokyo (HND)",
-    keyword: ["Tokyo", "HND", "Tokyo (HND)"],
-    airportCode: "HND"
+    keyword: ["Tokyo", "HND", "Tokyo (HND)"]
   },
   {
     location: "Tbilisi (TBS)",
-    keyword: ["Tbilisi", "TBS", "Tbilisi (TBS)"],
-    airportCode: "TBS"
+    keyword: ["Tbilisi", "TBS", "Tbilisi (TBS)"]
   },
   {
     location: "Sydney (SYD)",
-    keyword: ["Sydney", "SYD", "Sydney (SYD)"],
-    airportCode: "SYD"
+    keyword: ["Sydney", "SYD", "Sydney (SYD)"]
   },
   {
     location: "Istanbul (SAW)",
-    keyword: ["Istanbul", "Tur", "SAW", "Istanbul (SAW)"],
-    airportCode: "SAW"
+    keyword: ["Istanbul", "Tur", "SAW", "Istanbul (SAW)"]
   },
   {
     location: "London (LGW)",
-    keyword: ["London", "LGW", "London (LGW)"],
-    airportCode: "LGW"
+    keyword: ["London", "LGW", "London (LGW)"]
   }
 ];
 
@@ -450,42 +445,3 @@ let CreateTable = function(id,thead,tbody,filterId,filterBy,tripType) {
 
 let flight = new SearchFlight();
 flight.showHideRoundTrip();
-
-
-const fetchFlightData = async () => {
-  const departureId = airportSearch.find(airport => airport.location === document.searchFlight.fromPlace.value)?.airportCode;
-  const arrivalId = airportSearch.find(airport => airport.location === document.searchFlight.toPlace.value)?.airportCode;
-  const outboundDate = document.searchFlight.travelDate.value;
-  const returnDate = document.searchFlight.dateOfReturn.value;
-  const currency = 'AED';
-  const oneWay = document.searchFlight.radioOneWay.checked ? 1 : 2;
-  const roundTrip = document.searchFlight.radioOneWay.checked ? 2 : 1;
-
-
-  console.log(departureId, arrivalId, outboundDate, returnDate, currency)
-  try {
-    const result = await fetch(`http://localhost:3000/flights`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        departureId: departureId || 'TBS',
-        arrivalId: arrivalId || 'SAW',
-        outboundDate: outboundDate || '2024-10-02',
-        returnDate: returnDate || null,
-        currency: currency || 'AED',
-      
-      })
-    })
-
-    const data = await result.json();
-
-    const div = document.createElement("div");
-    div.style.color = 'white';
-    div.innerHTML = JSON.stringify(data, null, 2);
-    document.querySelector("body").appendChild(div);
-  } catch (error) {
-    console.error(error)
-  }
-}

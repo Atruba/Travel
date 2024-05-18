@@ -486,7 +486,7 @@ header .planIc {
 }
 
 #bodyCotainer {
-  padding-top: 50px;
+  padding-top: 55px;
   overflow: hidden;
 }
 
@@ -564,14 +564,15 @@ header .planIc {
   width: 2px;
 }
 
-.flightTable {
+.Table {
   float: right;
   width: 70%;
 }
 
+
 .flightTable th {
   background: #000;
-  color: #fff;
+  color: #fef6db;
   padding: 10px;
   text-align: left;
 }
@@ -648,11 +649,12 @@ header .planIc {
 
 
 #FlightResult {
-  width: 420px; /* Adjust width as needed */
+  width: 1000px; /* Adjust width as needed */
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px; /* Add rounded corners */
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
   margin: 10px auto; /* Center the box horizontally */
   padding: 10px; /* Add some padding */
+  margin-right: 20px;
 }
