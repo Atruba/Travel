@@ -16,7 +16,7 @@
                 <div class="input-field">
                     <i class="fas fa-user"></i>
                     <input type="text" placeholder="Username" name="username">
-                </div>"
+                </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
                     <input type="password" placeholder="Password" name="password">
@@ -25,9 +25,9 @@
                 <p class="social-text">Or Sign in with social platform</p>
                 <div class="social-media">
                                       
-                    <a href="" class="social-icon">
+                    <div href="" class="social-icon">
                         <a href="google-oauth.php"> <i class="fab fa-google" ></i></a>
-                    </a>
+                    </div>
                     
                 </div>
                 <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
@@ -49,13 +49,10 @@
                 <input type="submit" value="Sign up" class="btn" name="SignUp">
                 <p class="social-text">Or Sign in with social platform</p>
                 <div class="social-media">
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                   
-                    <a href="" class="social-icon">
+                                   
+                    <div href="" class="social-icon">
                         <i class="fab fa-google"></i>
-                    </a>
+                    </div>
                   
                 </div>
                 <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
