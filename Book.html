@@ -1,185 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="book.css">
-
-  <link rel="stylesheet" href="common/styles/footer.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        select, input[type="date"], button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .flights-list {
+            margin-top: 20px;
+        }
+        .flight-item {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fafafa;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-  <header class="header1 header-mobile">
-    <div id="menu-btn" class="fas fa-bars"></div>
-    <a href="Home.html" class="logo"><i class="fas fa-paper-plane"></i>Digital Backpackers</a>
-    <nav class="navbar navbar-mobile navbar-mobile.active">
-      <a href="Home.html" class="cs-active">Home</a>
-      <a href="About.html">About</a>
-      <span class="services-option">
-        <div class="dropdown">
-          <button class="dropbutton">Services</button>
-          <div class="dropdown-content">
-            <a href="Destinations.html">Digital Guides</a>
-            <a href="Book.html">Bookings</a>
-            <a href="Map.html" class="activee">Interactive Map</a>
 
-          </div>
-        </div>
-      </span>
-      <a href="contact.html">Contact</a>
-      </nav>
-        <a href="myaccount.html" class="btn btn-mobile">Sign In</a>
-    </nav>
-  </header>
+<div class="container">
+    <h1>Flight Search</h1>
+    <form id="flightForm">
+        <label for="from">From:</label>
+        <select id="from" name="from" required>
+            <option value="" disabled selected>Select your departure city</option>
+            <option value="istanbul">Istanbul, Turkey</option>
+            <option value="tbilisi">Tbilisi, Georgia</option>
+            <option value="bath">Bath, UK</option>
+            <option value="sydney">Sydney, Australia</option>
+            <option value="tokyo">Tokyo, Japan</option>
+        </select>
 
-  <section id="bodyCotainer">
-    <!-- Flight Search From Starts -->
-    <div class="filterSearchFilter">
-      <aside id="flightSearch">
-        <form name="searchFlight">
-          <div class="radio-toolbar">
-            <input type="radio" id="radioOneWay" name="trip" value="One Way" checked>
-            <label for="radioOneWay">One Way</label>
+        <label for="to">To:</label>
+        <select id="to" name="to" required>
+            <option value="" disabled selected>Select your destination city</option>
+            <option value="istanbul">Istanbul, Turkey</option>
+            <option value="tbilisi">Tbilisi, Georgia</option>
+            <option value="bath">Bath, UK</option>
+            <option value="sydney">Sydney, Australia</option>
+            <option value="tokyo">Tokyo, Japan</option>
+        </select>
 
-            <input type="radio" id="radioRoundTrip" name="trip" value="Round Trip">
-            <label for="radioRoundTrip">Round Trip</label>
-          </div>
-          <div class="sourceDesination">
-            <input type="text" id="fromPlace" placeholder="From" onkeyup="flight.airportAutoSuggestion(event)" />
-            <ul id="source"></ul>
-            <span class="error"></span>
-          </div>
-          <div  class="sourceDesination">
-            <input type="text" id="toPlace" placeholder="To" onkeyup="flight.airportAutoSuggestion(event)" />
-            <ul id="destination"></ul>
-            <span class="error"></span>
-          </div>
-          <div id="depatureDate">
-            <input type="text" placeholder="Travel Date" onfocus="(this.type='date')" id="travelDate" onchange="flight.validateEnteredDate(event)" />
-          </div>
-          <div id="returnDate">
-            <input type="text" placeholder="Return Date" onfocus="(this.type='date')" id="dateOfReturn" onchange="flight.validateEnteredDate(event)" />
-          </div>
-          <div>
-            <input type="number" id="noOfTravelers" onchange="flight.validateTravelers(event)" min="1" max ="8" placeholder="Number of Travelers">
-          </div>
-          <div>
-            <input id="searchBtn" type="button" onclick="flight.submitValues(event)" value="Submit" />
-          </div>
-        </form>
-      </aside>
-      <div class="filterDetails">
-        <div id="showFilter" class="showFilter"></div>
-        <div id="showFilterRoundTrip" class="showFilter"></div>
-      </div>
-    </div>
-    <!-- Flight Search From Ends -->
-    <!-- Flight List From Starts -->
-    <div id="FlightResult">
-      <div class="beforeSearch"><i class="fa fa-fighter-jet" aria-hidden="true"></i>Please Make Fight Search</div>
-      <div class="flightOnward flightResultWrapper">
-        <div class="flightResultHeader">
-          <div class="headerStartingDate">
-            <h4 class="headStartLoc"></h4>
-            <p class="headStartDate"></p>
-          </div>
-          <div>
-            <i class="exchangeIc fa fa-long-arrow-right"></i>
-          </div>
-          <div class="headeReturnDate">
-            <h4 class="headEndLoc"></h4>
-            <p class="headEndDate"></p>
-          </div>
-        </div>
-        <div class="flightResultContent">
-          <table id="table"></table>
-        </div>
-      </div>
-      <div class="flightReturn flightResultWrapper">
-        <div class="flightResultHeader">
-          <div class="headerStartingDate">
-            <h4 class="returnStartLoc"></h4>
-            <p class="returnStartDate"></p>
-          </div>
-          <div>
-            <i class="exchangeIc fa fa-long-arrow-right"></i>
-          </div>
-          <div class="headeReturnDate">
-            <h4 class="returnEndLoc"></h4>
-            <p class="returnEndDate"></p>
-          </div>
-        </div>
-        <div class="flightResultContent">
-          <table id="table1"></table>
-        </div>
-      </div>
-    </div>
-    <!-- Flight List From Ends -->
-  </section>
+        <label for="departureDate">Departure Date:</label>
+        <input type="date" id="departureDate" name="departureDate" required>
 
-      
-<!--                  Footer                      -->
-<footer id="cs-footer-308">
-  <div class="cs-container">
-      <!-- Logo Group -->
-      <div class="cs-logo-group">
-        <a aria-label="go back to home" class="cs-logo" href="Home.html">
-          <h1 class="cs-logo-text">Digtial Backpackers</h1> </a>
-        <p class="cs-text">
-          Digital backpackers are a new breed of travelers who leverage technology to enhance their adventures.
-        </p>
-      </div>
-      
-      <!-- Links -->
-      <ul class="cs-nav">
-        <li class="cs-nav-li">
-          <span class="cs-header">Quick Links</span>
-      </li>
-          <li class="cs-nav-li">
-              <a class="cs-nav-link" href="Home.html">Home</a>
-          </li>
-          <li class="cs-nav-li">
-              <a class="cs-nav-link" href="About.html">About</a>
-          </li>
-          <li class="cs-nav-li">
-              <a class="cs-nav-link" href="Destinations.html">Destinations</a>
-          </li>
-          <li class="cs-nav-li">
-            <a class="cs-nav-link" href="Map.html">Map</a>
-        </li>
-          <li class="cs-nav-li">
-              <a class="cs-nav-link" href="contact.html">Contact</a>
-          </li>
-      </ul>
-      <!-- Contact Info -->
-      <ul class="cs-nav">
-          <li class="cs-nav-li">
-              <span class="cs-header">Contact</span>
-          </li>
-          <li class="cs-nav-li">
-              <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone-stroke.svg" alt="phone" width="24" height="24">
-              <a class="cs-nav-link cs-phone" href="https://wa.me/971553620934">(+971) 55 362 0934</a>
-          </li>
-          <li class="cs-nav-li">
-              <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/email-stroke.svg" alt="email" width="24" height="24">
-              <a class="cs-nav-link cs-email" href="mailto:digitalbackpackers24@gmail.com">digitalbackpackers24@gmail.com</a>
-          </li> 
-          <li class="cs-nav-li">
-              <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin-stroke.svg" alt="pin" width="24" height="24">
-              <a class="cs-nav-link cs-address" href="https://maps.app.goo.gl/qpSWhccZDWv7zuGB9" target="_blank" rel="noopener">
-                   Bath Spa University, RAK
-              </a>
-          </li>
-      </ul>
-  </div>
-  <div class="cs-bottom">
-      <span class="cs-copyright">© Copyright 2024 - <a class="cs-copyright-link" href="">Digital Backpackers</a></span>
-  </div>
+        <label for="returnDate">Return Date:</label>
+        <input type="date" id="returnDate" name="returnDate">
 
+        <button type="submit">Search Flights</button>
+    </form>
 
-</footer>
-<script src="book.js"></script>
+    <div id="flightsList" class="flights-list"></div>
+</div>
+
+<script>
+    document.getElementById('flightForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const fromCity = document.getElementById('from').value;
+        const toCity = document.getElementById('to').value;
+        const departureDate = document.getElementById('departureDate').value;
+        const returnDate = document.getElementById('returnDate').value;
+
+        const flightsList = document.getElementById('flightsList');
+        flightsList.innerHTML = '';
+
+        const flights = [
+            {
+                from: 'istanbul',
+                to: 'tokyo',
+                departure: '2024-06-01',
+                return: '2024-06-15',
+                price: '$800'
+            },
+            {
+                from: 'sydney',
+                to: 'bath',
+                departure: '2024-07-10',
+                return: '2024-07-20',
+                price: '$1200'
+            },
+            // More flight data can be added here
+        ];
+
+        const matchingFlights = flights.filter(flight => {
+            return flight.from === fromCity && flight.to === toCity && flight.departure === departureDate && (!returnDate || flight.return === returnDate);
+        });
+
+        if (matchingFlights.length > 0) {
+            matchingFlights.forEach(flight => {
+                const flightItem = document.createElement('div');
+                flightItem.className = 'flight-item';
+                flightItem.innerHTML = `
+                    <p>From: ${flight.from.charAt(0).toUpperCase() + flight.from.slice(1)}, To: ${flight.to.charAt(0).toUpperCase() + flight.to.slice(1)}</p>
+                    <p>Departure: ${flight.departure}</p>
+                    <p>Return: ${flight.return}</p>
+                    <p>Price: ${flight.price}</p>
+                `;
+                flightsList.appendChild(flightItem);
+            });
+        } else {
+            flightsList.innerHTML = '<p>No matching flights found.</p>';
+        }
+    });
+</script>
 
 </body>
 </html>

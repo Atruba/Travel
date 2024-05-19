@@ -271,7 +271,8 @@ let AirlineDisplay = function() {
       rowContent.push(this.airlinesResult.departureTime);
       rowContent.push(this.airlinesResult.arrivalTime);
       rowContent.push(this.airlinesResult.price);
-      rowContent.push("<input type='button' class='bookTicBtn' value='Book Now' />");
+      const bookNowLink = `<a href="https://www.airarabia.com" class="bookTicBtn">Book Now</a>`;
+      rowContent.push(bookNowLink);
       this.tableContent.push(rowContent)
     }
   });

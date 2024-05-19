@@ -543,3 +543,50 @@ font-size: 12px;
     font-weight: 500;
     color:#fef6db;
 }
+
+
+/* Style the sub-dropdown */
+.sub-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the sub-dropbutton */
+.sub-dropbutton {
+  background-color: transparent;
+  color: none;
+  padding: 10px;
+  margin: 0 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #fef6db;
+}
+
+/* Style the sub-dropdown content (hidden by default) */
+.sub-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2c2c2c;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Style the sub-dropdown links */
+.sub-dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of sub-dropdown links on hover */
+.sub-dropdown-content a:hover {
+  background-color: #fef6db;
+}
+
+/* Show the sub-dropdown menu on hover */
+.sub-dropdown:hover .sub-dropdown-content {
+  display: block;
+}
