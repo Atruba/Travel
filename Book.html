@@ -96,7 +96,10 @@
         <button type="submit">Search Flights</button>
     </form>
 
-    <div id="flightsList" class="flights-list"></div>
+    <div id="bestFlightsList" class="flights-list"></div>
+    <h2>Best Flights</h2>
+</div>
+
 </div>
 
 <script>
@@ -126,7 +129,6 @@
                 return: '2024-07-20',
                 price: '$1200'
             },
-            // More flight data can be added here
         ];
 
         const matchingFlights = flights.filter(flight => {
@@ -150,6 +152,5 @@
         }
     });
 </script>
-
 </body>
 </html>
