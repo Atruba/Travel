@@ -31,6 +31,7 @@ html::-webkit-scrollbar-thumb {
 body {
   background: #111;
   overflow-x: hidden;
+  padding-bottom: 100px; /* Adjust the value based on your footer height */
   min-height: 100vh; /* Ensures viewport is at least the height of the content + footer */
 }
 
