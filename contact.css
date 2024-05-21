@@ -52,20 +52,9 @@ section {
   color: #fef6db;
 }
 
-.btn {
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 1.7rem;
-  color: #fef6db;
-  border: #111;
-  cursor: pointer;
-  background: none;
-}
-.btn:hover {
-  background: #fef6db;
-  color: #fef6db;
-}
+
+
+
 
 .header {
   position: fixed;
@@ -152,26 +141,34 @@ section {
   font-size: 1.7rem;
   font-weight: 500;
   color: #fef6db;
+  
 }
 
 .btn {
-  display: inline-block;
-  background: #fcad02;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
+  margin-top:1rem;
+  display:inline-block;
+  padding:1rem 3rem;
+  font-size:1.7rem;
+  color:#fef6db;
+  border:#111;
+  cursor:pointer;
+  border-radius: 8px;
+  background:#fcad02;
 }
 
 .btn:hover {
-  background: #f0d08a;
+  background:#f1c970;
+  color:#fef6db;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
+}
+
+.dropbutton:hover{
+  color:#fcad02 ;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -203,7 +200,7 @@ section {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #fcad02;
+  background-color: #878683;
 }
 
 .dropdown:hover {
@@ -217,7 +214,7 @@ section {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #fcad02;
+  background-color: #757575;
 }
 
 @media (max-width: 991px) {
@@ -433,11 +430,6 @@ textarea.input {
 .input-container.textarea label {
   top: 1rem;
   transform: translateY(0);
-}
-
-.btn:hover {
-  background-color: transparent;
-  color: #fff;
 }
 
 .input-container span {

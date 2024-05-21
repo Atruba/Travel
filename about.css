@@ -55,7 +55,96 @@ section{
 
 }
 
-.btn{
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  background: rgba(59, 65, 49, 0.7254901961);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.header .navbar {
+  position: relative;
+  width: 524px;
+  height: 50px;
+  top: 99%;
+  left: 0;
+  right: 0;
+  background: #222;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .navbar a {
+  position: relative;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #fef6db;
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 0, 23px;
+  z-index: 100;
+}
+.header .navbar a:hover {
+  color: #fcad02;
+}
+.header .navbar a .navbar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 100%;
+  background: linear-gradient(45deg, #127e41, #fcad02);
+  border-radius: 8px;
+}
+.header .btn {
+  margin-top: 0;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+.logo i {
+  color: #fef6db;
+  padding-right: 0.5rem;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.dropbutton {
+  background-color: transparent;
+  color: none;
+  padding: 10px;
+  margin-left: 20px;
+  margin: 0 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #fef6db;
+  
+}
+
+.btn {
   margin-top:1rem;
   display:inline-block;
   padding:1rem 3rem;
@@ -63,116 +152,23 @@ section{
   color:#fef6db;
   border:#111;
   cursor:pointer;
-  background:none;
-
-  &:hover{
-    background:#fef6db;
-    color:#fef6db;
-  }
-}
-
-.header{
-  position:fixed;
-  top:0; left:0; right:0;
-  z-index:900;
-  background: #3b4131b9;
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  padding:1.5rem 9%;
   border-radius: 8px;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  margin-right:20px ;
-
-    .navbar{
-      position:relative;
-      width: 524px;
-      height: 60px;
-      top:99%; left:0; right:0;
-      background: #222;
-      border-radius: 8px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-      .navbar a{
-    position: relative;
-    font-size: 1.7rem;
-    font-weight: 500;
-    color:#fef6db;
-    display:inline-block;
-    margin:0 1rem;
-    padding: 0, 23px;
-    &:hover{
-      color:#fcad02;
-    }
-  }
-  
-  
-  .btn{
-    margin-top:0;
-  }
-  }
-
-
-.logo{
-  font-size: 2.5rem;
-  color:#fff;
-  font-weight:bolder;
-  margin-left: 20px;
-
-  i{
-    color:#fef6db;
-    padding-right: .5rem;
-  }
-
-}
-
-#menu-btn{
-  font-size:2.5rem;
-  color:#fff;
-  cursor:pointer;
-  display:none;
-}
-
-.dropbutton {
-  background-color:transparent;
-  color: none;
-  padding: 10px;
-  margin-left: 20px;
-  margin:0 1rem;
-  border: none;
-  cursor: pointer;
-  font-size: 1.7rem;
-    font-weight: 500;
-    color:#fef6db;
-    margin-right: 20px;
-    &:hover{
-      color:#fcad02;
-    }
-}
-
-.btn {
-  display: inline-block;
-  background: #fcad02;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
+  background:#fcad02;
 }
 
 .btn:hover {
-  background: #f0d08a;
+  background:#f1c970;
+  color:#fef6db;
 }
-
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
+}
+
+.dropbutton:hover{
+  color:#fcad02 ;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -181,7 +177,7 @@ section{
   position: absolute;
   background-color: #2c2c2c;
   min-width: 160px;
-  z-index: 1;
+  z-index: 100;
 }
 
 /* Links inside the dropdown */
@@ -193,26 +189,34 @@ section{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #fef6db;}
+.dropdown-content a:hover {
+  background-color: #fef6db;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #fcad02;}
+.dropdown:hover .dropbtn {
+  background-color: #878683;
+}
 
-
-
-
+.dropdown:hover {
+  z-index: 100;
+}
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #2c2c2c;}
-
+.dropdown-content a:hover {
+  background-color: #2c2c2c;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #fcad02;}
-
-
+.dropdown:hover .dropbtn {
+  background-color: #757575;
+  
+}
 
 
 @media (max-width:991px){
