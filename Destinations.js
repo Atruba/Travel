@@ -30,19 +30,6 @@ popupForm.addEventListener('click', (e) => {
 });
 
 
-const panelLink1 = document.querySelector('.panel-link1');
-const popupForm1 = document.querySelector('.popup-form1');
-
-panelLink1.addEventListener('click', (e) => {
-  e.preventDefault();
-  popupForm1.style.display = 'block';
-});
-
-popupForm1.addEventListener('click', (e) => {
-  if (e.target === popupForm1) {
-    popupForm1.style.display = 'none';
-  }
-});
 
 
 
