@@ -6,10 +6,10 @@
   <title>Travel Web App</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="common/styles/Header.css">
   <link rel="stylesheet" href="styles1.css">
-
+  
   <link rel="stylesheet" href="common/styles/footer.css">
+  <link rel="stylesheet" href="common/styles/Header.css">
   <style>
     #book-form p {
       font-size: 20px;
@@ -51,7 +51,7 @@
 
   <div class="slider">
     <div class="slider-images">
-        <img src="turkey-1.png" alt="Image 1" onclick="currentSlide(1)">
+        <img src="./Assests/trip.png" alt="Image 1" onclick="currentSlide(1)">
         <img src="UK-1.png" alt="Image 2" onclick="currentSlide(2)">
         <img src="aus-1.png" alt="Image 3" onclick="currentSlide(3)">
         <img src="georg.png" alt="Image 4" onclick="currentSlide(4)">
@@ -293,6 +293,12 @@
 </footer>
             
 <script src="script.js"></script>
-
+<script>
+  document.getElementById('menu-btn').addEventListener('click', function () {
+    document.querySelector('.navbar').classList.toggle('active');
+    console.log("I am active")
+  });
+  
+</script>
 </body>
 </html>

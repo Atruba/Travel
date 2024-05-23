@@ -19,4 +19,5 @@ inputs.forEach((input) => {
 
 document.getElementById('menu-btn').addEventListener('click', function () {
   document.querySelector('.navbar').classList.toggle('active');
+  console.log("I am active")
 });

@@ -260,3 +260,15 @@ body{
 .dropdown:hover .dropbtn {
   background-color: #757575;
 }
+@media (max-width: 768px) {
+  .navbar-mobile.active {
+    display: flex;
+    position: absolute;
+    width: 30%;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+  }
+
+}

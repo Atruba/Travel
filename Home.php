@@ -1,9 +1,4 @@
-<?php
-session_start();
-include("connect.php");
-include("register.php");
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +9,7 @@ include("register.php");
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="styles1.css">
   <link rel="stylesheet" href="common/styles/footer.css">
+  <link rel="stylesheet" href="common/styles/Header.css">
   <style>
     #book-form p {
       font-size: 20px;
@@ -28,34 +24,13 @@ include("register.php");
 
 <!--                  Header                      -->
 
-  <header class="header header-mobile">
-    <div id="menu-btn" class="fas fa-bars"></div>
-    <a href="Home.html" class="logo"><i class="fas fa-paper-plane"></i>Digital Backpackers</a>
-    <nav class="navbar navbar-mobile navbar-mobile.active">
-      <a href="Home.html" class="cs-active">Home</a>
-      <a href="About.html">About</a>
-      <span class="services-option">
-        <div class="dropdown">
-          <button class="dropbutton">Services</button>
-          <div class="dropdown-content">
-            <a href="Destinations.html">Digital Guides</a>
-            <a href="Book.html">Bookings</a>
-            <a href="Map.html" class="active">Interactive Map</a>
-          </div>
-        </div>
-      </span>
-      <a href="contact.html">Contact</a>
-      </nav>
-        <a href="myaccount.html" class="btn btn-mobile">Sign In</a>
-    </nav>
-  </header>
-  <br><br><br>
+<?php include 'nav.php'; ?>
 
 <!--                  Slider Side Images                      -->
 
   <div class="slider">
     <div class="slider-images">
-        <img src="turkey-1.png" alt="Image 1" onclick="currentSlide(1)">
+        <img src="Assests/trip.png" alt="Image 1" onclick="currentSlide(1)">
         <img src="UK-1.png" alt="Image 2" onclick="currentSlide(2)">
         <img src="aus-1.png" alt="Image 3" onclick="currentSlide(3)">
         <img src="georg.png" alt="Image 4" onclick="currentSlide(4)">

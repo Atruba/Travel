@@ -1,11 +1,19 @@
 <?php 
-echo '<pre>';
-print_r($_POST);
-echo '</pre>';
+session_start(); // Start the session
+
 
 include 'connect.php';
 ob_start(); // Turn on output buffering
 
+if(!isset($_SESSION['username'])) {
+    header("Location: Signin.php"); // Redirect to signin.php page
+    exit();
+}
+
+if(isset($_SESSION['username'])) {
+    header("Location: Signin.php"); // Redirect to signin.php page
+    exit();
+}
 if(isset($_POST['SignUp'])){
     $username = $_POST['username'];
     $email = $_POST['email'];
@@ -26,6 +34,7 @@ if(isset($_POST['SignUp'])){
         }
     }
 }
+ 
 
 if(isset($_POST['SignIn'])){
     $username = $_POST['username'];
@@ -36,13 +45,18 @@ if(isset($_POST['SignIn'])){
     $result = $conn->query($sql);
     
     if($result->num_rows > 0){
-         session_start();
          $_SESSION['username'] = $username;
          header("Location: Home.php"); // Make sure the location is correct
          exit();
     } else {
          echo "Not Found, Incorrect Username or Password";
- }
+    }
 }
-ob_end_flush(); // Flush the output buffer
+
+
+
+ob_end_flush(); // Flush the output buffer
 ?>
+<body>
+    <p>i am register.php</p>
+</body>
