@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,27 +23,7 @@
   </style>
 </head>
 <body>
-  <header class="header header-mobile">
-    <div id="menu-btn" class="fas fa-bars"></div>
-    <a href="Home.html" class="logo"><i class="fas fa-paper-plane"></i>Digital Backpackers</a>
-    <nav class="navbar navbar-mobile navbar-mobile.active">
-      <a href="Home.html" class="cs-active">Home</a>
-      <a href="About.html">About</a>
-      <span class="services-option">
-        <div class="dropdown">
-          <button class="dropbutton">Services</button>
-          <div class="dropdown-content">
-            <a href="Destinations.html">Digital Guides</a>
-            <a href="bookings.html">Bookings</a>
-            <a href="Map.html" class="active">Interactive Map</a>
-          </div>
-        </div>
-      </span>
-      <a href="contact.html">Contact</a>
-      </nav>
-        <a href="myaccount.html" class="btn btn-mobile">Sign In</a>
-    </nav>
-  </header>
+  <?php include 'nav.php'; ?>
 
   <div class="container-one">
     <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountain Landscape" class="bg-image" style="margin-top: 30px;">
@@ -157,5 +138,11 @@ Seamless booking: Book tours and activities directly on our platform – all in 
 </footer>
 
   <script src="about.js"></script>
+<script>document.getElementById('menu-btn').addEventListener('click', function () {
+  document.querySelector('.navbar').classList.toggle('active');
+  console.log("I am active")
+});
+
+</script>  
 </body>
 </html>
