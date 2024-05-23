@@ -46,28 +46,28 @@ function changeBackgroundImage(n) {
     let titleText;
     switch(n) {
       case 1:
-        backgroundImage = "turkey.png";
+        backgroundImage = "Assets/turkey.png";
         titleText = "the Magic of Turkey";
         break;
       case 2:
-        backgroundImage = "UK.png";
+        backgroundImage = "Assets/UK.png";
         titleText = "the Beauty of the UK";
         break;
       case 3:
-        backgroundImage = "aus.png";
+        backgroundImage = "Assets/aus.png";
         titleText = "the Charm of Australia";
         break;
       case 4:
-        backgroundImage = "georg1.png"; // Replace with your Georgia image
+        backgroundImage = "Assets/georg1.png"; // Replace with your Georgia image
         titleText = "the Unveiling Tbilisi's Treasures";
       break;
       case 5:
-        backgroundImage = "japan1.png"; // Replace with your Japan image
+        backgroundImage = "Assets/japan1.png"; // Replace with your Japan image
         titleText = "the Tokyo Treasures on a Budget";
       break;
       // Add more cases for additional images
       default:
-        backgroundImage = "turkey.png"; // Default background image
+        backgroundImage = "Assets/turkey.png"; // Default background image
         titleText = "Experience the Magic of Dubai";
     }
     document.getElementById("home").style.backgroundImage = "url('" + backgroundImage + "')";

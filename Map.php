@@ -23,35 +23,15 @@ if(!isset($_SESSION['username'])){
 
 </head>
 <body>
-  <header class="header header-mobile">
-    <div id="menu-btn" class="fas fa-bars"></div>
-    <a href="Home.html" class="logo"><i class="fas fa-paper-plane"></i>Digital Backpackers</a>
-    <nav class="navbar navbar-mobile navbar-mobile.active">
-      <a href="Home.html" class="cs-active">Home</a>
-      <a href="About.html">About</a>
-      <span class="services-option">
-        <div class="dropdown">
-          <button class="dropbutton">Services</button>
-          <div class="dropdown-content">
-            <a href="Destinations.html">Digital Guides</a>
-            <a href="bookings.html">Bookings</a>
-            <a href="Map.html" class="active">Interactive Map</a>
-          </div>
-        </div>
-      </span>
-      <a href="contact.html">Contact</a>
-      </nav>
-        <a href="myaccount.html" class="btn btn-mobile">Sign In</a>
-    </nav>
-  </header>
+<?php include 'nav.php'; ?>  
 
 
     <section class="ag-canvas">
       <div class="social-icons">
-        <a href="https://www.facebook.com/people/Digital-Backpackers/61559198532404/?mibextid=LQQJ4d" title="Click here to visit our Facebook Page"><img src="facebook.png" alt="Facebook"></a>
-        <a href="https://wa.me/971553620934" title="Text us on WhatsApp"><img src="whatsapp.png" alt="WhatsApp"></a>
-        <a href="https://www.instagram.com/digitalbackpackers_?igsh=d2kyaDNueXFpN2d6&utm_source=qr" title="Click out our Instagram"><img src="instagram.png" alt="Instagram"></a>
-        <a href="https://discord.gg/juP98Huk" title="Connect with Solo Backpackers"><img src="discord.png" alt="Discord"></a>
+        <a href="https://www.facebook.com/people/Digital-Backpackers/61559198532404/?mibextid=LQQJ4d" title="Click here to visit our Facebook Page"><img src="Assets/facebook.png" alt="Facebook"></a>
+        <a href="https://wa.me/971553620934" title="Text us on WhatsApp"><img src="Assets/whatsapp.png" alt="WhatsApp"></a>
+        <a href="https://www.instagram.com/digitalbackpackers_?igsh=d2kyaDNueXFpN2d6&utm_source=qr" title="Click out our Instagram"><img src="Assets/instagram.png" alt="Instagram"></a>
+        <a href="https://discord.gg/juP98Huk" title="Connect with Solo Backpackers"><img src="Assets/discord.png" alt="Discord"></a>
     </div>
     <div class="info-box">
       <h2>Map Guide</h2>

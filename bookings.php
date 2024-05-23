@@ -1,10 +1,13 @@
 <?php
 session_start();
-include("connect.php");
-include("register.php");
+include("connectphp
+");
+include("registerphp
+");
 
 if(!isset($_SESSION['username'])){
-  header("Location: Signin.php");
+  header("Location: Signinphp
+  ");
  exit();
 }
 
@@ -12,8 +15,10 @@ if(!isset($_SESSION['username'])){
 ?>
 
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html
+>
+<html
+ lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,28 +43,8 @@ if(!isset($_SESSION['username'])){
 <body>
 <!--                  Header                      -->
 
-<header class="header header-mobile">
-    <div id="menu-btn" class="fas fa-bars"></div>
-    <a href="Home.html" class="logo"><i class="fas fa-paper-plane"></i>Digital Backpackers</a>
-    <nav class="navbar navbar-mobile navbar-mobile.active">
-      <a href="Home.html" class="cs-active">Home</a>
-      <a href="About.html">About</a>
-      <span class="services-option">
-        <div class="dropdown">
-          <button class="dropbutton">Services</button>
-          <div class="dropdown-content">
-            <a href="Destinations.html">Digital Guides</a>
-            <a href="Book.html">Bookings</a>
-            <a href="Map.html" class="active">Interactive Map</a>
-          </div>
-        </div>
-      </span>
-      <a href="contact.html">Contact</a>
-      </nav>
-        <a href="myaccount.html" class="btn btn-mobile">Sign In</a>
-    </nav>
-  </header><br><br><br>
-
+<?php include 'navphp
+'; ?>
   <span class="big-circle"></span>
 
     <!--                  Flight Widget Section                  -->
@@ -75,7 +60,8 @@ if(!isset($_SESSION['username'])){
     <div class="cs-container">
         <!-- Logo Group -->
         <div class="cs-logo-group">
-          <a aria-label="go back to home" class="cs-logo" href="Home.html">
+          <a aria-label="go back to home" class="cs-logo" href="Home.php
+          ">
             <h1 class="cs-logo-text">Digtial Backpackers</h1> </a>
           <p class="cs-text">
             Digital backpackers are a new breed of travelers who leverage technology to enhance their adventures.
@@ -88,22 +74,28 @@ if(!isset($_SESSION['username'])){
             <span class="cs-header">Quick Links</span>
         </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="Home.html">Home</a>
+                <a class="cs-nav-link" href="Home.php
+                ">Home</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="About.html">About</a>
+                <a class="cs-nav-link" href="About.php
+                ">About</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="Destinations.html">Digital Guides</a>
+                <a class="cs-nav-link" href="Destinations.php
+                ">Digital Guides</a>
             </li>
             <li class="cs-nav-li">
-              <a class="cs-nav-link" href="bookings.html">Book Flights & Hotels</a>
+              <a class="cs-nav-link" href="bookings.php
+              ">Book Flights & Hotels</a>
           </li>
             <li class="cs-nav-li">
-              <a class="cs-nav-link" href="Map.html">Interactive Map</a>
+              <a class="cs-nav-link" href="Map.php
+              ">Interactive Map</a>
           </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="contact.html">Contact</a>
+                <a class="cs-nav-link" href="contact.php
+                ">Contact</a>
             </li>
         </ul>
         <!-- Contact Info -->
@@ -128,7 +120,8 @@ if(!isset($_SESSION['username'])){
         </ul>
     </div>
     <div class="cs-bottom">
-        <span class="cs-copyright">© Copyright 2024 - <a class="cs-copyright-link" href="Home.html">Digital Backpackers</a></span>
+        <span class="cs-copyright">© Copyright 2024 - <a class="cs-copyright-link" href="Home.php
+        ">Digital Backpackers</a></span>
     </div>
   </footer>
 

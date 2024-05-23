@@ -30,7 +30,7 @@ if(!isset($_SESSION['username'])){
 
   <header class="header header-mobile">
     <div id="menu-btn" class="fas fa-bars"></div>
-    <a href="Home.html" class="logo"><i class="fas fa-paper-plane"></i>Digital Backpackers</a>
+    <a href="Home.php" class="logo"><i class="fas fa-paper-plane"></i>Digital Backpackers</a>
     <?php include 'nav.php'; ?>
   </header>
 
@@ -40,43 +40,43 @@ if(!isset($_SESSION['username'])){
 
     <div class="slidee">
 
-        <div class="item" style="background-image: url(des3.jpg);">
+        <div class="item" style="background-image: url(Assets/des3.jpg);">
             <div class="content">
                 <div class="name">Sydney, Australia</div>
                 <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
-                <a href="sydney.html" class="btn">Full Guide</a>
+                <a href="sydney.php" class="btn">Full Guide</a>
             </div>
         </div>
         
-        <div class="item" style="background-image: url(des1.jpg);">
+        <div class="item" style="background-image: url(Assets/des1.jpg);">
             <div class="content">
                 <div class="name">Istanbul, Turkey</div>
                 <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
-                <a href="istanbul.html" class="btn">Full Guide</a>
+                <a href="istanbul.php" class="btn">Full Guide</a>
             </div>
         </div>
-        <div class="item" style="background-image: url(des2.jpg);">
+        <div class="item" style="background-image: url(Assets/des2.jpg);">
             <div class="content">
                 <div class="name">Tbilisi, Georgia</div>
                 <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
-                <a href="tbilisi.html" class="btn">Full Guide</a>
+                <a href="tbilisi.php" class="btn">Full Guide</a>
 
               </div>
         </div>
         
-        <div class="item" style="background-image: url(des4.jpg);">
+        <div class="item" style="background-image: url(Assets/des4.jpg);">
             <div class="content">
                 <div class="name">Bath, UK</div>
                 <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
-                <a href="bath.html" class="btn">Full Guide</a>
+                <a href="bath.php" class="btn">Full Guide</a>
 
               </div>
         </div>
-        <div class="item" style="background-image: url(des5.jpg);">
+        <div class="item" style="background-image: url(Assets/des5.jpg);">
             <div class="content">
                 <div class="name">Japan</div>
                 <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
-                <a href="tokyo.html" class="btn">Full Guide</a>
+                <a href="tokyo.php" class="btn">Full Guide</a>
 
               </div>
         </div>
@@ -275,7 +275,7 @@ if(!isset($_SESSION['username'])){
   <div class="cs-container">
       <!-- Logo Group -->
       <div class="cs-logo-group">
-        <a aria-label="go back to home" class="cs-logo" href="Home.html">
+        <a aria-label="go back to home" class="cs-logo" href="Home.php">
           <h1 class="cs-logo-text">Digtial Backpackers</h1> </a>
         <p class="cs-text">
           Digital backpackers are a new breed of travelers who leverage technology to enhance their adventures.
@@ -288,22 +288,22 @@ if(!isset($_SESSION['username'])){
           <span class="cs-header">Quick Links</span>
       </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="Home.html">Home</a>
+              <a class="cs-nav-link" href="Home.php">Home</a>
           </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="About.html">About</a>
+              <a class="cs-nav-link" href="About.php">About</a>
           </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="Destinations.html">Digital Guides</a>
+              <a class="cs-nav-link" href="Destinations.php">Digital Guides</a>
           </li>
           <li class="cs-nav-li">
-            <a class="cs-nav-link" href="bookings.html">Book Flights & Hotels</a>
+            <a class="cs-nav-link" href="bookings.php">Book Flights & Hotels</a>
         </li>
           <li class="cs-nav-li">
-            <a class="cs-nav-link" href="Map.html">Interactive Map</a>
+            <a class="cs-nav-link" href="Map.php">Interactive Map</a>
         </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="contact.html">Contact</a>
+              <a class="cs-nav-link" href="contact.php">Contact</a>
           </li>
       </ul>
       <!-- Contact Info -->

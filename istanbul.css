@@ -1338,7 +1338,6 @@
 			width: 100%;
 			height: 100%;
 			background-color: rgba(0, 0, 0, 0.25);
-			background-image: url("images/overlay.png");
 		}
 
 		#header h1 {
@@ -1731,12 +1730,9 @@
 	display: flex; /* Enable flexbox layout */
 	align-items: center; /* Align content vertically */
 	justify-content: center; /* Align content horizontally */
-<<<<<<< Updated upstream
-=======
   }
 
 
   .bordered-iframe {
 	border: 5px solid #ccc;
->>>>>>> Stashed changes
   }

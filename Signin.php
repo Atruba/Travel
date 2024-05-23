@@ -65,7 +65,7 @@
                     <p>Welcome back! Sign in to continue your journey with us and explore the world of adventure.</p>
                     <button class="btn" id="sign-in-btn">Sign in</button>
                 </div>
-                <img src="signin.svg" alt="" class="image">
+                <img src="Assets/signin.svg" alt="" class="image">
             </div>
             <div class="panel right-panel">
                 <div class="content">
@@ -73,7 +73,7 @@
                     <p>Join our community of adventurers! Sign up now to unlock exclusive access to travel tips, deals, and more!</p>
                     <button class="btn" id="sign-up-btn">Sign up</button>
                 </div>
-                <img src="women.svg" alt="" class="image">
+                <img src="Assets/women.svg" alt="" class="image">
             </div>
         </div>
     </div>

@@ -1213,31 +1213,31 @@ color:#127e41;
 }
 
 .card1 {
-  background-image: url(ist.jpg);
+  background-image: url(Assets/ist.jpg);
   background-repeat: no-repeat;
   background-size: 200% 120%;
 }
 
 .card2 {
-  background-image: url(bath.jpg);
+  background-image: url(Assets/bath.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .card4 {
-  background-image: url(tbi.jpg);
+  background-image: url(Assets/tbi.jpg);
   background-repeat: no-repeat;
   background-size: 140% 100%;
 }
 
 .card3 {
-  background-image: url(tok.jpg);
+  background-image: url(Assets/tok.jpg);
   background-repeat: no-repeat;
   background-size: 140% 100%;
 }
 
 .card5 {
-  background-image: url(syd.jpg);
+  background-image: url(Asstes/syd.jpg);
   background-repeat: no-repeat;
   background-size: 140% 100%;
 }

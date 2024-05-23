@@ -30,11 +30,11 @@
 
   <div class="slider">
     <div class="slider-images">
-        <img src="Assests/trip.png" alt="Image 1" onclick="currentSlide(1)">
-        <img src="UK-1.png" alt="Image 2" onclick="currentSlide(2)">
-        <img src="aus-1.png" alt="Image 3" onclick="currentSlide(3)">
-        <img src="georg.png" alt="Image 4" onclick="currentSlide(4)">
-        <img src="japan.png" alt="Image 5" onclick="currentSlide(5)">
+        <img src="Assets/trip.png" alt="Image 1" onclick="currentSlide(1)">
+        <img src="Assets/UK1.png" alt="Image 2" onclick="currentSlide(2)">
+        <img src="Assets/aus-1.png" alt="Image 3" onclick="currentSlide(3)">
+        <img src="Assets/georg.png" alt="Image 4" onclick="currentSlide(4)">
+        <img src="Assets/japan.png" alt="Image 5" onclick="currentSlide(5)">
     </div>
   </div>
 
@@ -46,9 +46,9 @@
       <a href="#" class="btn">Sign In</a>
     </div>
     <div class="social-icons">
-      <a href="https://www.facebook.com/people/Digital-Backpackers/61559198532404/?mibextid=LQQJ4d" title="Click here to visit our Facebook Page"><img src="facebook.png" alt="Facebook"></a>
-      <a href="https://wa.me/971553620934" title="Text us on WhatsApp"><img src="whatsapp.png" alt="WhatsApp"></a>
-      <a href="https://www.instagram.com/digitalbackpackers_?igsh=d2kyaDNueXFpN2d6&utm_source=qr" title="Click out our Instagram"><img src="instagram.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/people/Digital-Backpackers/61559198532404/?mibextid=LQQJ4d" title="Click here to visit our Facebook Page"><img src="Assets/facebook.png" alt="Facebook"></a>
+      <a href="https://wa.me/971553620934" title="Text us on WhatsApp"><img src="Assets/whatsapp.png" alt="WhatsApp"></a>
+      <a href="https://www.instagram.com/digitalbackpackers_?igsh=d2kyaDNueXFpN2d6&utm_source=qr" title="Click out our Instagram"><img src="Assets/instagram.png" alt="Instagram"></a>
       <a href="https://discord.gg/juP98Huk" title="Connect with Solo Backpackers"><img src="discord.png" alt="Discord"></a>
   </div>
   </section>
@@ -56,11 +56,11 @@
   <section class="book-form" id="book-form">
     <p>Choose your full guide:</p>
     <select name="city" id="city">
-        <option value="Sydney.html">Sydney</option>
-        <option value="Bath.html">Bath</option>
-        <option value="Istanbul.html">Istanbul</option>
-        <option value="Tokyo.html">Tokyo</option>
-        <option value="Tbilisi.html">Tbilisi</option>
+        <option value="Assets/Sydney.html">Sydney</option>
+        <option value="Assets/Bath.html">Bath</option>
+        <option value="Assets/Istanbul.html">Istanbul</option>
+        <option value="Assets/Tokyo.html">Tokyo</option>
+        <option value="Assets/Tbilisi.html">Tbilisi</option>
     </select>
     <input type="hidden" id="selectedCity" name="selectedCity">
     <input type="button" value="Find Now" class="btn" onclick="redirectToCityPage()">
@@ -74,9 +74,9 @@
     <div class="video-container">
       <video src="video1.mp4" muted autoplay loop class="video"></video>
       <div class="controls">
-        <span class="control-btn" data-src="video1.mp4"></span>
-        <span class="control-btn" data-src="video2.mp4"></span>
-        <span class="control-btn" data-src="video3.mp4"></span>
+        <span class="control-btn" data-src="Assets/video1.mp4"></span>
+        <span class="control-btn" data-src="Assets/video2.mp4"></span>
+        <span class="control-btn" data-src="Assets/video3.mp4"></span>
       </div>
     </div>
 
@@ -100,7 +100,7 @@
     <div class="box-container">
       <div class="box">
         <div class="image">
-          <img src="tk.jpeg" alt="">
+          <img src="Assets/tk.jpeg" alt="">
         </div>
         <div class="content">
           <h3>Tokyo, Japan</h3>
@@ -111,7 +111,7 @@
       </div>
       <div class="box">
         <div class="image">
-          <img src="tb.jpg" alt="">
+          <img src="Assets/tb.jpg" alt="">
         </div>
         <div class="content">
           <h3>Tbilisi, Georgia</h3>
@@ -121,7 +121,7 @@
       </div>
       <div class="box">
         <div class="image">
-          <img src="bt.jpeg" alt="">
+          <img src="Assets/bt.jpeg" alt="">
         </div>
         <div class="content">
           <h3>Bath, UK</h3>
@@ -227,16 +227,16 @@
           <span class="cs-header">Quick Links</span>
       </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="Home.html">Home</a>
+              <a class="cs-nav-link" href="Home.php">Home</a>
           </li>
           <li class="cs-nav-li">
               <a class="cs-nav-link" href="About.html">About</a>
           </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="Destinations.html">Destinations</a>
+              <a class="cs-nav-link" href="Destinations.php">Destinations</a>
           </li>
           <li class="cs-nav-li">
-            <a class="cs-nav-link" href="Map.html">Map</a>
+            <a class="cs-nav-link" href="Map.php">Map</a>
         </li>
           <li class="cs-nav-li">
               <a class="cs-nav-link" href="contact.html">Contact</a>

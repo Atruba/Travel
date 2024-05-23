@@ -36,7 +36,7 @@
        
     </nav>
     <form method="post" action="register.php">
-            <input type="submit" class="btn btn-mobile" name="SignOut" value="Sign Out">
+            <input type="submit" class="btn btn-mobile" name="SignOut" value="Sign In/Out">
         </form>
 </header>
 <br><br><br>

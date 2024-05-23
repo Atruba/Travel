@@ -13,7 +13,7 @@ section{
 
 }
 .home{
-  background: url(turkey.png) no-repeat;
+  background: url(Assets/turkey.png) no-repeat;
   background-size:cover;
   background-position:center;
   margin:0 auto;

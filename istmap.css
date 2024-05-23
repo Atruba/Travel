@@ -82,7 +82,7 @@ section{
   .main {
     height: 40rem;
     padding-top: 5rem;
-    background-image: url("bg-ist.jpg");
+    background-image: url("Assets/bg-ist.jpg");
     background-size: cover;
   }
   
