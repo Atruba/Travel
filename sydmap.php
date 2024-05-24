@@ -56,7 +56,7 @@
   <div class="cs-container">
       <!-- Logo Group -->
       <div class="cs-logo-group">
-        <a aria-label="go back to home" class="cs-logo" href="Home.php">
+        <a aria-label="go back to home" class="cs-logo" href="index.php">
           <h1 class="cs-logo-text">Digtial Backpackers</h1> </a>
         <p class="cs-text">
           Digital backpackers are a new breed of travelers who leverage technology to enhance their adventures.
@@ -69,7 +69,7 @@
           <span class="cs-header">Quick Links</span>
       </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="Home.php">Home</a>
+              <a class="cs-nav-link" href="index.php">Home</a>
           </li>
           <li class="cs-nav-li">
               <a class="cs-nav-link" href="About.php">About</a>

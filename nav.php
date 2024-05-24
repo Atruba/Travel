@@ -1,10 +1,10 @@
 <header class="header header-mobile">
     <div id="menu-btn" class="fas fa-bars"></div>
-    <a href="Home.php" class="logo"><i class="fas fa-paper-plane"></i>Digital Backpackers</a>
+    <a href="index.php" class="logo"><i class="fas fa-paper-plane"></i>Digital Backpackers</a>
     <nav class="navbar navbar-mobile navbar-mobile.active">
         <?php
         $navLinks = [
-            ['href' => 'Home.php', 'text' => 'Home', 'class' => 'cs-active'],
+            ['href' => 'index.php', 'text' => 'Home', 'class' => 'cs-active'],
             ['href' => 'About.php', 'text' => 'About', 'class' => ''],
             ['href' => 'contact.php', 'text' => 'Contact', 'class' => ''],
         ];

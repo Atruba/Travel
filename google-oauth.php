@@ -7,7 +7,7 @@ include "connect.php"; // Include your database connection file
 // Update the following variables with your Google OAuth credentials
 $google_oauth_client_id = '343185708877-rometopnte64887t1c4tc5brh08gm06s.apps.googleusercontent.com';
 $google_oauth_client_secret = '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';
-$google_oauth_redirect_uri = 'http://localhost/GitHub/Travel/Home.php'; //add ur URI
+$google_oauth_redirect_uri = 'http://localhost/GitHub/Travel/index.php'; //add ur URI
 $google_oauth_version = 'v3';
 
 // If the user is not already logged in via Google and the code parameter is present
@@ -50,7 +50,7 @@ if (!isset($_SESSION['google_loggedin']) && isset($_GET['code']) && !empty($_GET
             $_SESSION['google_loggedin'] = TRUE;
             $_SESSION['google_email'] = $profile['email'];
             // Redirect to profile page or perform any other action
-            header('Location:Home.php'); //change to ur file where u want to direct it
+            header('Location:index.php'); //change to ur file where u want to direct it
             exit;
             
         } else {

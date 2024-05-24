@@ -11,7 +11,7 @@ if(!isset($_SESSION['username'])) {
 }
 
 if(isset($_SESSION['username'])) {
-    header("Location: Signin.php"); // Redirect to signin.php page
+    header("Location: index.php"); // Redirect to signin.php page
     exit();
 }
 if(isset($_POST['SignUp'])){
@@ -27,7 +27,7 @@ if(isset($_POST['SignUp'])){
     } else {
         $insertQuery = "INSERT INTO userss(username, email, password) VALUES ('$username', '$email', '$password')";
         if($conn->query($insertQuery) === TRUE){
-            header("Location: Home.php"); // Make sure the location is correct
+            header("Location: index.php"); // Make sure the location is correct
             exit();
         } else {
             echo "Error: " . $conn->error;
@@ -46,7 +46,7 @@ if(isset($_POST['SignIn'])){
     
     if($result->num_rows > 0){
          $_SESSION['username'] = $username;
-         header("Location: Home.php"); // Make sure the location is correct
+         header("Location: index.php"); // Make sure the location is correct
          exit();
     } else {
          echo "Not Found, Incorrect Username or Password";

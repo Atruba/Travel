@@ -60,7 +60,7 @@ if(!isset($_SESSION['username'])){
     <div class="cs-container">
         <!-- Logo Group -->
         <div class="cs-logo-group">
-          <a aria-label="go back to home" class="cs-logo" href="Home.php
+          <a aria-label="go back to home" class="cs-logo" href="index.php
           ">
             <h1 class="cs-logo-text">Digtial Backpackers</h1> </a>
           <p class="cs-text">
@@ -74,7 +74,7 @@ if(!isset($_SESSION['username'])){
             <span class="cs-header">Quick Links</span>
         </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="Home.php
+                <a class="cs-nav-link" href="index.php
                 ">Home</a>
             </li>
             <li class="cs-nav-li">
@@ -120,7 +120,7 @@ if(!isset($_SESSION['username'])){
         </ul>
     </div>
     <div class="cs-bottom">
-        <span class="cs-copyright">© Copyright 2024 - <a class="cs-copyright-link" href="Home.php
+        <span class="cs-copyright">© Copyright 2024 - <a class="cs-copyright-link" href="index.php
         ">Digital Backpackers</a></span>
     </div>
   </footer>
