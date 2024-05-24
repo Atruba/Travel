@@ -49,7 +49,7 @@
       <a href="https://www.facebook.com/people/Digital-Backpackers/61559198532404/?mibextid=LQQJ4d" title="Click here to visit our Facebook Page"><img src="Assets/facebook.png" alt="Facebook"></a>
       <a href="https://wa.me/971553620934" title="Text us on WhatsApp"><img src="Assets/whatsapp.png" alt="WhatsApp"></a>
       <a href="https://www.instagram.com/digitalbackpackers_?igsh=d2kyaDNueXFpN2d6&utm_source=qr" title="Click out our Instagram"><img src="Assets/instagram.png" alt="Instagram"></a>
-      <a href="https://discord.gg/juP98Huk" title="Connect with Solo Backpackers"><img src="discord.png" alt="Discord"></a>
+      <a href="https://discord.gg/juP98Huk" title="Connect with Solo Backpackers"><img src="Assets/discord.png" alt="Discord"></a>
   </div>
   </section>
  
