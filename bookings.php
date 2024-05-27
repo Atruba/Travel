@@ -1,18 +1,4 @@
-<?php
-session_start();
-include("connectphp
-");
-include("registerphp
-");
 
-if(!isset($_SESSION['username'])){
-  header("Location: Signinphp
-  ");
- exit();
-}
-
-
-?>
 
 
 <!DOCTYPE html
@@ -43,8 +29,7 @@ if(!isset($_SESSION['username'])){
 <body>
 <!--                  Header                      -->
 
-<?php include 'navphp
-'; ?>
+<?php include 'nav.php'; ?>
   <span class="big-circle"></span>
 
     <!--                  Flight Widget Section                  -->

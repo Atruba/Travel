@@ -11,7 +11,7 @@ if(!isset($_SESSION['username'])) {
 }
 
 if(isset($_SESSION['username'])) {
-    header("Location: index.php"); // Redirect to signin.php page
+    header("Location: index.php"); // Redirect to index.php page
     exit();
 }
 if(isset($_POST['SignUp'])){
@@ -57,6 +57,3 @@ if(isset($_POST['SignIn'])){
 
 ob_end_flush(); // Flush the output buffer
 ?>
-<body>
-    <p>i am register.php</p>
-</body>

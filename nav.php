@@ -6,7 +6,6 @@
         $navLinks = [
             ['href' => 'index.php', 'text' => 'Home', 'class' => 'cs-active'],
             ['href' => 'About.php', 'text' => 'About', 'class' => ''],
-            ['href' => 'contact.php', 'text' => 'Contact', 'class' => ''],
         ];
 
         foreach ($navLinks as $link) {
@@ -32,11 +31,14 @@
                 </div>
             </div>
         </span>
+        <span class="services-option">
+            <a href="contact.php">contact us</a>
+        </span>
 
        
     </nav>
     <form method="post" action="register.php">
-            <input type="submit" class="btn btn-mobile" name="SignOut" value="Sign In/Out">
+            <input href="Signin.php" type="submit" class="btn btn-mobile" name="SignOut" value="Sign In">
         </form>
 </header>
 <br><br><br>

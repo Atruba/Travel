@@ -233,13 +233,16 @@
               <a class="cs-nav-link" href="About.html">About</a>
           </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="Destinations.php">Destinations</a>
+              <a class="cs-nav-link" href="Destinations.php">Digital Guides</a>
           </li>
           <li class="cs-nav-li">
-            <a class="cs-nav-link" href="Map.php">Map</a>
+            <a class="cs-nav-link" href="Map.php">Interactive Map</a>
         </li>
+        <li class="cs-nav-li">
+              <a class="cs-nav-link" href="bookings.php">Bookings</a>
+          </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="contact.html">Contact</a>
+              <a class="cs-nav-link" href="contact.php">Contact Us</a>
           </li>
       </ul>
       <!-- Contact Info -->
@@ -268,7 +271,11 @@
   </div>
 </footer>
             
-<script src="script.js"></script>
-
+<script src="home.js"></script>
+<script>document.getElementById('menu-btn').addEventListener('click', function () {
+  document.querySelector('.navbar').classList.toggle('active');
+  console.log("I am active")
+});
+</script>
 </body>
 </html>

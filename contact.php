@@ -130,13 +130,13 @@
             <a class="cs-nav-link" href="Destinations.php">Digital Guides</a>
         </li>
         <li class="cs-nav-li">
-          <a class="cs-nav-link" href="bookings.php">Book Flights & Hotels</a>
+          <a class="cs-nav-link" href="bookings.php">Bookings</a>
       </li>
         <li class="cs-nav-li">
           <a class="cs-nav-link" href="Map.php">Interactive Map</a>
       </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="contact.php">Contact</a>
+              <a class="cs-nav-link" href="contact.php">Contact Us</a>
           </li>
       </ul>
       <!-- Contact Info -->
@@ -165,6 +165,10 @@
   </div>
 </footer>
       <script src="contact.js"></script>     
-   
+      <script>document.getElementById('menu-btn').addEventListener('click', function () {
+  document.querySelector('.navbar').classList.toggle('active');
+  console.log("I am active")
+});
+</script>
 </body>
 </html>

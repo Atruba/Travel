@@ -34,26 +34,18 @@ section{
 
 
 .c-h1 {
-  margin-left: 90px; /* Left margin for proper alignment */
-  text-align: left;  /* Align text to the left */
-  margin-top: 250px;
-  margin-right: auto; /* Ensures it doesn't go beyond the container */
-  margin-bottom: 25px;
-  font-size: 6em;
-  font-weight: 20px;
+  margin-left: 20px;
+  margin-top: 100px;
+  margin-right: 20px;
+  font-size: 2.5em;
 }
 
 .c-h2 {
-  margin-left: 90px; /* Left margin for proper alignment */
-  text-align: left;  /* Align text to the left */
-  padding-left: 10px;
-  margin-right: 900px;
-  border-left: solid;
-  border-bottom: solid;
-  border-color: #eeb007;
-  border-width: 8px;
-  font-size: 3em;
-  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-left: 5px;
+  margin-right: 20px;
+  font-size: 1.5em;
+  border-width: 4px;
 }
 
 /* Hero section styles */
@@ -150,15 +142,18 @@ section{
   }
 
   .c-h1 {
-    margin-top: 100px;  /* Reduce top margin for mobile */
-    margin-right: 50px;  /* Reduce right margin for mobile */
-    font-size: 4em;     /* Adjust font size for mobile */
+    margin-left: 40px;
+    margin-top: 150px;
+    margin-right: 40px;
+    font-size: 4em;
   }
 
-  .c-h2, .c-p {
-    margin-left: 20px;   /* Reduce left margin for mobile */
-    margin-right: 20px;  /* Reduce right margin for mobile */
-    font-size: 1.1em;    /* Adjust font size for mobile */
+  .c-h2 {
+    margin-left: 40px;
+    padding-left: 10px;
+    margin-right: 40px;
+    font-size: 2em;
+    border-width: 6px;
   }
 
   /* Add more styles for mobile layout as needed */
@@ -169,13 +164,18 @@ section{
   /* Styles for tablets */
 
   .c-h1 {
-    margin-right: 900px;  /* Adjust right margin for tablets */
-    font-size: 5em;     /* Adjust font size for tablets */
+    margin-left: 60px;
+    margin-top: 200px;
+    margin-right: 60px;
+    font-size: 5em;
   }
 
-  .c-h2, .c-p {
-    margin-left: 50px;   /* Adjust left margin for tablets */
-    margin-right: 700px;  /* Adjust right margin for tablets */
+  .c-h2 {
+    margin-left: 60px;
+    padding-left: 10px;
+    margin-right: 60px;
+    font-size: 2.5em;
+    border-width: 7px;
   }
 
   /* Add more styles for tablet layout as needed */
@@ -183,14 +183,22 @@ section{
 
 /* Targetting large screens (optional) */
 @media only screen and (min-width: 992px) {
-  .c-p {
-    line-height: 1.5; /* Increase line-spacing for better readability on large screens */
-  }
-}
-/* Targetting large screens (optional) */
-@media only screen and (min-width: 992px) {
   .container-one {
     text-align: center;  /* Center the content within the hero section */
+  }
+  .c-h1 {
+    margin-left: 90px;
+    margin-top: 250px;
+    margin-right: auto;
+    font-size: 6em;
+  }
+
+  .c-h2 {
+    margin-left: 90px;
+    padding-left: 10px;
+    margin-right: 900px;
+    font-size: 3em;
+    border-width: 8px;
   }
 }
 

@@ -1,18 +1,4 @@
 
-<?php
-session_start();
-include("connect.php");
-include("register.php");
-
-if(!isset($_SESSION['username'])){
-  header("Location: Signin.php");
- exit();
-}
-
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +30,7 @@ if(!isset($_SESSION['username'])){
             <div class="content">
                 <div class="name">Sydney, Australia</div>
                 <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
-                <a href="sydney.php" class="btn">Full Guide</a>
+                <a href="sydney.html" class="btn">Full Guide</a>
             </div>
         </div>
         
@@ -52,14 +38,14 @@ if(!isset($_SESSION['username'])){
             <div class="content">
                 <div class="name">Istanbul, Turkey</div>
                 <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
-                <a href="istanbul.php" class="btn">Full Guide</a>
+                <a href="istanbul.html" class="btn">Full Guide</a>
             </div>
         </div>
         <div class="item" style="background-image: url(Assets/des2.jpg);">
             <div class="content">
                 <div class="name">Tbilisi, Georgia</div>
                 <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
-                <a href="tbilisi.php" class="btn">Full Guide</a>
+                <a href="tbilisi.html" class="btn">Full Guide</a>
 
               </div>
         </div>
@@ -68,7 +54,7 @@ if(!isset($_SESSION['username'])){
             <div class="content">
                 <div class="name">Bath, UK</div>
                 <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
-                <a href="bath.php" class="btn">Full Guide</a>
+                <a href="bath.html" class="btn">Full Guide</a>
 
               </div>
         </div>
@@ -76,7 +62,7 @@ if(!isset($_SESSION['username'])){
             <div class="content">
                 <div class="name">Japan</div>
                 <div class="des">Free Walking tour, Top Places to visit and Itineraries Inside!</div>
-                <a href="tokyo.php" class="btn">Full Guide</a>
+                <a href="tokyo.html" class="btn">Full Guide</a>
 
               </div>
         </div>
@@ -258,7 +244,7 @@ if(!isset($_SESSION['username'])){
           <div class="border">
             <p class="title">Sydney</p>
             <div class="slide">
-              <h6 class="para">Donwload</h6>
+              <h6 class="para">Download</h6>
             </div>
           </div>
         </div>
@@ -297,13 +283,13 @@ if(!isset($_SESSION['username'])){
               <a class="cs-nav-link" href="Destinations.php">Digital Guides</a>
           </li>
           <li class="cs-nav-li">
-            <a class="cs-nav-link" href="bookings.php">Book Flights & Hotels</a>
+            <a class="cs-nav-link" href="bookings.php">Bookings</a>
         </li>
           <li class="cs-nav-li">
             <a class="cs-nav-link" href="Map.php">Interactive Map</a>
         </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="contact.php">Contact</a>
+              <a class="cs-nav-link" href="contact.php">Contact Us</a>
           </li>
       </ul>
       <!-- Contact Info -->
@@ -336,5 +322,11 @@ if(!isset($_SESSION['username'])){
                               
 
   <script src="Destinations.js"></script>
+  <script>document.getElementById('menu-btn').addEventListener('click', function () {
+  document.querySelector('.navbar').classList.toggle('active');
+  console.log("I am active")
+});
+</script>
 </body>
+
 </html>

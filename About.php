@@ -33,10 +33,10 @@
       <h2 class="c-h2"> Let Us Show You <br>the Beauty of the World</h2>
     </div>
     <div class="social-icons">
-      <a href="https://www.facebook.com/people/Digital-Backpackers/61559198532404/?mibextid=LQQJ4d" title="Click here to visit our Facebook Page"><img src="facebook.png" alt="Facebook"></a>
-      <a href="https://wa.me/971553620934" title="Text us on WhatsApp"><img src="whatsapp.png" alt="WhatsApp"></a>
-      <a href="https://www.instagram.com/digitalbackpackers_?igsh=d2kyaDNueXFpN2d6&utm_source=qr" title="Click out our Instagram"><img src="instagram.png" alt="Instagram"></a>
-      <a href="https://discord.gg/juP98Huk" title="Connect with Solo Backpackers"><img src="discord.png" alt="Discord"></a>
+      <a href="https://www.facebook.com/people/Digital-Backpackers/61559198532404/?mibextid=LQQJ4d" title="Click here to visit our Facebook Page"><img src="Assets/facebook.png" alt="Facebook"></a>
+      <a href="https://wa.me/971553620934" title="Text us on WhatsApp"><img src="Assets/whatsapp.png" alt="WhatsApp"></a>
+      <a href="https://www.instagram.com/digitalbackpackers_?igsh=d2kyaDNueXFpN2d6&utm_source=qr" title="Click out our Instagram"><img src="Assets/instagram.png" alt="Instagram"></a>
+      <a href="https://discord.gg/juP98Huk" title="Connect with Solo Backpackers"><img src="Assets/discord.png" alt="Discord"></a>
   </div>
   </div>
 
@@ -102,14 +102,14 @@ Seamless booking: Book tours and activities directly on our platform – all in 
               <a class="cs-nav-link" href="Destinations.html">Digital Guides</a>
           </li>
           <li class="cs-nav-li">
-            <a class="cs-nav-link" href="bookings.html">Book Flights & Hotels</a>
+            <a class="cs-nav-link" href="bookings.html">Bookings</a>
         </li>
           <li class="cs-nav-li">
             <a class="cs-nav-link" href="Map.html">Interactive Map</a>
         </li>
       
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="contact.html">Contact</a>
+              <a class="cs-nav-link" href="contact.html">Contact Us</a>
           </li>
       </ul>
       <!-- Contact Info -->

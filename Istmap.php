@@ -49,7 +49,7 @@
   <!-- Map container -->
   <div class="map-container">
     <!-- Paste the Google My Maps iframe code here -->
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1EkiwTzd75cX-ojo6JVme5ceA17wxCAk&ehbc=2E312F" width="640" height="480"></iframe>
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1EkiwTzd75cX-ojo6JVme5ceA17wxCAk&ehbc=2E312F" width="100%" height="480"></iframe>
   </div>
 
 
@@ -114,6 +114,11 @@
       <span class="cs-copyright">© Copyright 2024 - <a class="cs-copyright-link" href="">Digital Backpackers</a></span>
   </div>
 </footer>
-
+<script>document.getElementById('menu-btn').addEventListener('click', function () {
+  document.querySelector('.navbar').classList.toggle('active');
+  console.log("I am active")
+});
+</script>
 </body>
+
 </html>
