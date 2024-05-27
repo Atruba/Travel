@@ -71,22 +71,22 @@
           <span class="cs-header">Links</span>
       </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="Home.html">Home</a>
+              <a class="cs-nav-link" href="index.php">Home</a>
           </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="About.html">About</a>
+              <a class="cs-nav-link" href="About.php">About</a>
           </li>
           <li class="cs-nav-li">
-            <a class="cs-nav-link" href="Destinations.html">Digital Guides</a>
+            <a class="cs-nav-link" href="Destinations.php">Digital Guides</a>
         </li>
         <li class="cs-nav-li">
-          <a class="cs-nav-link" href="bookings.html">Book Flights & Hotels</a>
+          <a class="cs-nav-link" href="bookings.php">Book Flights & Hotels</a>
       </li>
         <li class="cs-nav-li">
-          <a class="cs-nav-link" href="Map.html">Interactive Map</a>
+          <a class="cs-nav-link" href="Map.php">Interactive Map</a>
       </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="contact.html">Contact</a>
+              <a class="cs-nav-link" href="contact.php">Contact</a>
           </li>
       </ul>
       <!-- Contact Info -->

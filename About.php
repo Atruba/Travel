@@ -93,23 +93,23 @@ Seamless booking: Book tours and activities directly on our platform – all in 
           <span class="cs-header">Quick Links</span>
       </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="Home.html">Home</a>
+              <a class="cs-nav-link" href="index.php">Home</a>
           </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="About.html">About</a>
+              <a class="cs-nav-link" href="About.php">About</a>
           </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="Destinations.html">Digital Guides</a>
+              <a class="cs-nav-link" href="Destinations.php">Digital Guides</a>
           </li>
           <li class="cs-nav-li">
-            <a class="cs-nav-link" href="bookings.html">Bookings</a>
+            <a class="cs-nav-link" href="bookings.php">Bookings</a>
         </li>
           <li class="cs-nav-li">
-            <a class="cs-nav-link" href="Map.html">Interactive Map</a>
+            <a class="cs-nav-link" href="Map.php">Interactive Map</a>
         </li>
       
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="contact.html">Contact Us</a>
+              <a class="cs-nav-link" href="contact.php">Contact Us</a>
           </li>
       </ul>
       <!-- Contact Info -->

@@ -257,7 +257,7 @@
           <span class="cs-header">Quick Links</span>
       </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="Home.php">Home</a>
+              <a class="cs-nav-link" href="index.php">Home</a>
           </li>
           <li class="cs-nav-li">
               <a class="cs-nav-link" href="About.php">About</a>

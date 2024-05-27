@@ -32,7 +32,7 @@
     <div class="slider-images">
         <img src="Assets/trip.png" alt="Image 1" onclick="currentSlide(1)">
         <img src="Assets/UK1.png" alt="Image 2" onclick="currentSlide(2)">
-        <img src="Assets/aus-1.png" alt="Image 3" onclick="currentSlide(3)">
+        <img src="Assets/aus1.png" alt="Image 3" onclick="currentSlide(3)">
         <img src="Assets/georg.png" alt="Image 4" onclick="currentSlide(4)">
         <img src="Assets/japan.png" alt="Image 5" onclick="currentSlide(5)">
     </div>
@@ -85,7 +85,7 @@
       <h3>The World Awaits You</h3>
       <p>We empower budget-conscious adventurers to explore the world with minimal impact. Download our digital guides – say goodbye to paper waste! – and discover cities with free walking tours, hidden gems, and budget-friendly recommendations. Our interactive map becomes your ultimate travel companion, visually pinpointing must-see attractions, delectable restaurants, and unique shopping experiences – all tailored to your budget.
         , while our platform seamlessly integrates booking tours and activities. Plan your dream itinerary, explore like a local, and save money – all on our user-friendly website!</p>
-      <a href="About.html" class="btn">Explore</a>
+      <a href="About.php" class="btn">Explore</a>
     </div>
   </section>
 
@@ -230,7 +230,7 @@
               <a class="cs-nav-link" href="index.php">Home</a>
           </li>
           <li class="cs-nav-li">
-              <a class="cs-nav-link" href="About.html">About</a>
+              <a class="cs-nav-link" href="About.php">About</a>
           </li>
           <li class="cs-nav-li">
               <a class="cs-nav-link" href="Destinations.php">Digital Guides</a>
