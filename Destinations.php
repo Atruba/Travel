@@ -322,7 +322,8 @@
                               
 
   <script src="Destinations.js"></script>
-  <script>document.getElementById('menu-btn').addEventListener('click', function () {
+  <script>
+  document.getElementById('menu-btn').addEventListener('click', function () {
   document.querySelector('.navbar').classList.toggle('active');
   console.log("I am active")
 });
